@@ -1,9 +1,10 @@
+import { BaseRouting } from "./routing/BaseRouting"
 
 function App() {
 
   return (
     <>
-      <div>sdhjbdjnn</div>
+      <BaseRouting/>
     </>
   )
 }
