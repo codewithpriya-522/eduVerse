@@ -15,8 +15,8 @@ Context -
 
 
 def check_accuracy_provide_percentage(prompt):
-    # os.environ['GOOGLE_API_KEY'] = "AIzaSyAwvs1fdM01yXT1oH1wHSDkYIoFx03yERA"
-    genai.configure(api_key="AIzaSyAwvs1fdM01yXT1oH1wHSDkYIoFx03yERA")
+    # os.environ['GOOGLE_API_KEY'] = ""
+    genai.configure(api_key="")
     model = genai.GenerativeModel('gemini-pro')
     response = model.generate_content(prompt)
     return response

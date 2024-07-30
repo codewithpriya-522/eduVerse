@@ -6,7 +6,7 @@
 # # pip install langchain google-cloud google-cloud-language
 
 # # Set up the Google API key
-# GOOGLE_API_KEY = "AIzaSyBRcheUk41qwLVjgrzvYPepUyE3QY9aSGQ"
+# GOOGLE_API_KEY = ""
 
 # # Define a function to use Google Generative AI (e.g., NLP analysis) via API key
 
