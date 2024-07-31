@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page with Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleProfile.css') }}">
+</head>
+<body>
+    <header>
+        <button id="profileButton">Profile</button>
+    </header>
+    <main>
+        <div class="container">
+            <div class="element" id="studyMaterial">Study Material</div>
+            <div class="element" id="practiceSet">Practice Set</div>
+            <div class="element" id="collegeExam">College Exam</div>
+        </div>
+        <div id="profileDetails" class="hidden">
+            <p><strong>Name:</strong> <span id="name"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Password:</strong> <span id="password"></span></p>
+            <p><strong>Class:</strong> <span id="s_class"></span></p>
+            <p><strong>Address:</strong> <span id="address"></span></p>
+            <p><strong>Mobile:</strong> <span id="mobile"></span></p>
+            <p><strong>Pin:</strong> <span id="pin"></span></p>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='js/scriptProfile.js') }}"></script>
+</body>
+</html>
