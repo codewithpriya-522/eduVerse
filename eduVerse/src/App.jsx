@@ -1,4 +1,5 @@
-import { BaseRouting } from "./routing/BaseRouting"
+import BaseRouting from "./routing/BaseRouting"
+
 
 function App() {
 

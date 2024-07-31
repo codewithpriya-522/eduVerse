@@ -1,7 +1,10 @@
 import React from 'react'
 import logo from '../../../assets/logo.png'
 import lonx_boav_220810 from '../../../assets/lonx_boav_220810.jpg'
+import { useNavigate } from 'react-router-dom'
+import '../landingPage/style.css'
 const LandingPage = () => {
+    const navigate = useNavigate()
     return (
         <div className="relative">
             <div className="absolute top-0 left-0 w-full h-[125vh] sm:h-[225vh] lg:h-[125vh] cover-gradient-2 sm:cover-gradient" /> <nav id="navbar" className="relative z-10 w-full text-neutral-800">
@@ -19,9 +22,11 @@ const LandingPage = () => {
                             NFT
                         </a></li> <li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
                             Portfolio
-                        </a></li> <li className="relative group"><button className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline flex items-center"><span>Products</span> <span aria-hidden="true" role="img" className="material-design-icon chevron-down-icon"><svg fill="currentColor" width={16} height={16} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z">{/**/}</path></svg></span></button> {/**/}</li></ul></div> <div className="space-x-3 hidden lg:flex"><button className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 px-8 xl:px-10 py-3 mt-2 bg-inherit text-gradient border border-[#0c66ee]">
-                            Login
-                        </button> <button className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white">
+                        </a></li> <li className="relative group">
+                                <button className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline flex items-center"><span>Products</span> <span aria-hidden="true" role="img" className="material-design-icon chevron-down-icon"><svg fill="currentColor" width={16} height={16} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z">{/**/}</path></svg></span></button> {/**/}</li></ul></div> <div className="space-x-3 hidden lg:flex"><button className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 px-8 xl:px-10 py-3 mt-2 bg-inherit text-gradient border border-[#0c66ee]" onClick={() => navigate("/login")}>
+                                    Login
+                                </button>
+                        <button className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white">
                             Sign Up
                         </button></div></div></nav> <main className="text-neutral-800"><div className="w-full" data-v-b444fb2c><section id="hero" className="w-full pb-24" data-v-b444fb2c><div className="relative max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden" data-v-b444fb2c><div className="col-span-12 lg:col-span-6 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 text-center sm:text-left" data-v-b444fb2c><span data-aos="fade-right" data-aos-once="true" className="text-base text-gradient font-semibold uppercase aos-init aos-animate" data-v-b444fb2c>Sign Up Today</span> <h1 data-aos="fade-right" data-aos-once="true" className="text-[2.5rem] sm:text-5xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10 aos-init aos-animate" data-v-b444fb2c>
                             The World's <span className="text-header-gradient" data-v-b444fb2c>Fastest Growing</span> Crypto Web App
