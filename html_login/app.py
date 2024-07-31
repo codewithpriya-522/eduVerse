@@ -3,6 +3,22 @@ import pyodbc
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/student')
+def student_login_signup():
+    return render_template('student_login_signup.html')
+
+@app.route('/teacher')
+def teacher_login_signup():
+    return render_template('teacher_login_signup.html')
+
+@app.route('/admin')
+def admin_login_signup():
+    return render_template('admin_login_signup.html')
+
 # Database connection
 def get_db_connection():
     server = r'LAPTOP-I7B5FA0R\SQLEXPRESS'  # Use raw string for backslash
@@ -38,12 +54,8 @@ def create_table():
 
 create_table()
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-@app.route('/signup', methods=['POST'])
-def signup():
+@app.route('/student_signup', methods=['POST'])
+def student_signup():
     try:
         name = request.form['name']
         email = request.form['email']
@@ -67,8 +79,8 @@ def signup():
         print(f"Database error: {e}")
         return "An error occurred while signing up. Please try again later."
 
-@app.route('/login', methods=['POST'])
-def login():
+@app.route('/student_login', methods=['POST'])
+def student_login():
     try:
         email = request.form['email']
         password = request.form['password']
@@ -88,6 +100,26 @@ def login():
     except pyodbc.Error as e:
         print(f"Database error: {e}")
         return "An error occurred during login. Please try again later."
+
+@app.route('/teacher_signup', methods=['POST'])
+def teacher_signup():
+    # Add logic to handle teacher signup
+    pass
+
+@app.route('/teacher_login', methods=['POST'])
+def teacher_login():
+    # Add logic to handle teacher login
+    pass
+
+@app.route('/admin_signup', methods=['POST'])
+def admin_signup():
+    # Add logic to handle admin signup
+    pass
+
+@app.route('/admin_login', methods=['POST'])
+def admin_login():
+    # Add logic to handle admin login
+    pass
 
 if __name__ == '__main__':
     app.run(debug=True)
