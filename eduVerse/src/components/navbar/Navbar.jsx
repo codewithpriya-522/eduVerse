@@ -1,4 +1,5 @@
-import logo from '@/assets/images/logo.svg'
+
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -11,12 +12,12 @@ const Navbar = () => {
             <a className="navbar-brand" href="/">
               <img
                 className="light-mode-item navbar-brand-item"
-                src={logo}
+                src="../src/assets/logo.png"
                 alt="logo"
               />
               <img
                 className="dark-mode-item navbar-brand-item"
-                src="@/assets/logo.png"
+                src="../src/assets/logo.png"
                 alt="logo"
               />
             </a>
@@ -242,7 +243,7 @@ const Navbar = () => {
                             {/* Dropdown item */}
                             <div className="d-flex mb-4 position-relative">
                               <img
-                                src="@/assets/images/client/uni-logo-01.svg"
+                                src="../src/assets/images/client/uni-logo-01.svg"
                                 className="icon-md"
                                 alt=""
                               />
@@ -258,7 +259,7 @@ const Navbar = () => {
                             {/* Dropdown item */}
                             <div className="d-flex mb-4 position-relative">
                               <img
-                                src="@/assets/images/client/uni-logo-02.svg"
+                                src="../src/assets/images/client/uni-logo-02.svg"
                                 className="icon-md"
                                 alt=""
                               />
@@ -274,7 +275,7 @@ const Navbar = () => {
                             {/* Dropdown item */}
                             <div className="d-flex mb-4 position-relative">
                               <img
-                                src="@/assets/images/client/uni-logo-03.svg"
+                                src="../src/assets/images/client/uni-logo-03.svg"
                                 className="icon-md"
                                 alt=""
                               />
@@ -290,7 +291,7 @@ const Navbar = () => {
                             {/* Dropdown item */}
                             <div className="d-flex mb-4 position-relative">
                               <img
-                                src="@/assets/images/client/uni-logo-01.svg"
+                                src="../src/assets/images/client/uni-logo-01.svg"
                                 className="icon-md"
                                 alt=""
                               />
@@ -306,7 +307,7 @@ const Navbar = () => {
                             {/* Dropdown item */}
                             <div className="d-flex position-relative">
                               <img
-                                src="@/assets/images/client/uni-logo-04.svg"
+                                src="../src/assets/images/client/uni-logo-04.svg"
                                 className="icon-md"
                                 alt=""
                               />
@@ -381,7 +382,7 @@ const Navbar = () => {
                               className="card bg-blue rounded-0 rounded-bottom p-3 position-relative overflow-hidden"
                               style={{
                                 background:
-                                  "url(@/assets/images/pattern/05.png) no-repeat center center",
+                                  "url(../src/assets/images/pattern/05.png) no-repeat center center",
                                 backgroundSize: "cover",
                               }}
                             >
@@ -848,25 +849,19 @@ const Navbar = () => {
                         data-bs-popper="none"
                       >
                         <li>
-                          {" "}
-                          <a className="dropdown-item" href="sign-in.html">
+                          <Link className="dropdown-item" to="/login">
                             Sign In
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          {" "}
-                          <a className="dropdown-item" href="sign-up.html">
-                            Sign Up
-                          </a>
+                          <Link className="dropdown-item" to="/registration">
+                            Sign up
+                          </Link>
                         </li>
                         <li>
-                          {" "}
-                          <a
-                            className="dropdown-item"
-                            href="forgot-password.html"
-                          >
+                          <Link className="dropdown-item" to="/forgot-password">
                             Forgot Password
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
@@ -1313,7 +1308,7 @@ const Navbar = () => {
                         <h6 className="mb-0">Download Eduport</h6>
                         <hr />
                         {/* Image */}
-                        <img src="@/assets/images/element/14.svg" alt="" />
+                        <img src="../src/assets/images/element/14.svg" alt="" />
                         {/* Download button */}
                         <div className="row g-2 justify-content-center mt-3">
                           {/* Google play store button */}
@@ -1321,7 +1316,7 @@ const Navbar = () => {
                             <a href="#">
                               {" "}
                               <img
-                                src="@/assets/images/client/google-play.svg"
+                                src="../src/assets/images/client/google-play.svg"
                                 className="btn-transition"
                                 alt="google-store"
                               />{" "}
@@ -1332,7 +1327,7 @@ const Navbar = () => {
                             <a href="#">
                               {" "}
                               <img
-                                src="@/assets/images/client/app-store.svg"
+                                src="../src/assets/images/client/app-store.svg"
                                 className="btn-transition"
                                 alt="app-store"
                               />{" "}
@@ -1350,7 +1345,7 @@ const Navbar = () => {
                           <div className="avatar avatar-xs me-2">
                             <img
                               className="avatar-img rounded-circle"
-                              src="@/assets/images/avatar/09.jpg"
+                              src="../src/assets/images/avatar/09.jpg"
                               alt="avatar"
                             />
                           </div>
@@ -1479,7 +1474,7 @@ const Navbar = () => {
               >
                 <img
                   className="avatar-img rounded-circle"
-                  src="@/assets/images/avatar/01.jpg"
+                  src="../src/assets/images/avatar/01.jpg"
                   alt="avatar"
                 />
               </a>
@@ -1494,7 +1489,7 @@ const Navbar = () => {
                     <div className="avatar me-3">
                       <img
                         className="avatar-img rounded-circle shadow"
-                        src="@/assets/images/avatar/01.jpg"
+                        src="../src/assets/images/avatar/01.jpg"
                         alt="avatar"
                       />
                     </div>
