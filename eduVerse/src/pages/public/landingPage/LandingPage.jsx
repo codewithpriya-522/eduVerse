@@ -1,114 +1,2948 @@
-import React from 'react'
-import logo from '../../../assets/logo.png'
-import lonx_boav_220810 from '../../../assets/lonx_boav_220810.jpg'
-import { useNavigate } from 'react-router-dom'
-import '../landingPage/style.css'
+// import React from 'react'
+import "../landingPage/style.css";
+import Navbar from "../../../components/navbar/Navbar";
+import Footer from "../../../components/footer/Footer";
+import science from "@/assets/images/client/science.svg"
+import angular from "@/assets/images/client/angular.svg"
+import figma from "@/assets/images/client/figma.svg"
+
 const LandingPage = () => {
-    const navigate = useNavigate()
-    return (
-        <div className="relative">
-            <div className="absolute top-0 left-0 w-full h-[125vh] sm:h-[225vh] lg:h-[125vh] cover-gradient-2 sm:cover-gradient" /> <nav id="navbar" className="relative z-10 w-full text-neutral-800">
-                <div className="flex flex-col max-w-screen-xl px-8 mx-auto lg:items-center lg:justify-between lg:flex-row py-4">
-                    <div className="flex flex-col lg:flex-row items-center space-x-4 xl:space-x-8">
-                        <div className="w-full flex flex-row items-center justify-between py-6"><div><img src={logo} alt="Nefa Logo" className="w-24 xl:w-28" /></div> <button className="rounded-lg lg:hidden focus:outline-none focus:shadow-outline"><span aria-hidden="true" role="img" className="material-design-icon segment-icon">
-                            <img src={lonx_boav_220810} />
-                        </span></button></div> <ul className="w-full h-auto flex flex-col flex-grow lg:items-center pb-4 lg:pb-0 lg:justify-end lg:flex-row origin-top duration-300 xl:space-x-2 space-y-3 lg:space-y-0 hidden lg:flex"><li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                            Cryptocurrency
-                        </a></li> <li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                            Exchanges
-                        </a></li> <li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                            Watchlist
-                        </a></li> <li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                            NFT
-                        </a></li> <li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                            Portfolio
-                        </a></li> <li className="relative group">
-                                <button className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline flex items-center"><span>Products</span> <span aria-hidden="true" role="img" className="material-design-icon chevron-down-icon"><svg fill="currentColor" width={16} height={16} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z">{/**/}</path></svg></span></button> {/**/}</li></ul></div> <div className="space-x-3 hidden lg:flex"><button className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 px-8 xl:px-10 py-3 mt-2 bg-inherit text-gradient border border-[#0c66ee]" onClick={() => navigate("/login")}>
-                                    Login
-                                </button>
-                        <button className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white">
-                            Sign Up
-                        </button></div></div></nav> <main className="text-neutral-800"><div className="w-full" data-v-b444fb2c><section id="hero" className="w-full pb-24" data-v-b444fb2c><div className="relative max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden" data-v-b444fb2c><div className="col-span-12 lg:col-span-6 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 text-center sm:text-left" data-v-b444fb2c><span data-aos="fade-right" data-aos-once="true" className="text-base text-gradient font-semibold uppercase aos-init aos-animate" data-v-b444fb2c>Sign Up Today</span> <h1 data-aos="fade-right" data-aos-once="true" className="text-[2.5rem] sm:text-5xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10 aos-init aos-animate" data-v-b444fb2c>
-                            The World's <span className="text-header-gradient" data-v-b444fb2c>Fastest Growing</span> Crypto Web App
-                        </h1> <p data-aos="fade-down" data-aos-once="true" data-aos-delay={300} className="paragraph hidden sm:block aos-init aos-animate" data-v-b444fb2c>
-                                Buy and sell 200+ cryptocurrencies with 20+ flat currencies using bank transfers or your credit/debit card.
-                            </p> <div data-aos="fade-up" data-aos-once="true" data-aos-delay={700} className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2 aos-init aos-animate" data-v-b444fb2c><button className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white" data-v-b444fb2c>
-                                Get Started
-                            </button> <button className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 max-w-full px-6 py-4 bg-inherit text-gradient border border-[#0c66ee] flex items-center justify-center" data-v-b444fb2c><span data-v-b444fb2c>Download App</span> <span aria-hidden="true" role="img" className="material-design-icon chevron-down-icon mt-1 text-[#0c66ee]" data-v-b444fb2c><svg fill="currentColor" width={20} height={20} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z">{/**/}</path></svg></span></button></div></div> <div className="hidden sm:block col-span-12 lg:col-span-6" data-v-b444fb2c><div className="w-full" data-v-b444fb2c><img data-aos="fade-up" data-aos-once="true" src="/_nuxt/img/hero-image.15eeae4.webp" alt="" className="-mt-4 aos-init aos-animate" data-v-b444fb2c /></div></div> <img data-aos="fade-up" data-aos-delay={300} src="/_nuxt/img/ellipse-1.4a34989.png" className="hidden sm:block absolute bottom-12 xl:bottom-16 left-4 xl:left-0 w-6 aos-init" data-v-b444fb2c /> <img data-aos="fade-up" data-aos-delay={300} src="/_nuxt/img/ellipse-2.4f6027c.png" className="hidden sm:block absolute top-4 sm:top-10 right-64 sm:right-96 xl:right-[32rem] w-6 aos-init aos-animate" data-v-b444fb2c /> <img data-aos="fade-up" data-aos-delay={300} src="/_nuxt/img/ellipse-3.397d7d7.png" className="hidden sm:block absolute bottom-56 right-24 w-6 aos-init" data-v-b444fb2c /> <img data-aos="fade-up" data-aos-delay={300} src="/_nuxt/img/star.a8c53d6.png" className="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8 aos-init aos-animate" data-v-b444fb2c /></div></section> <section className="max-w-screen-xl mx-2 sm:mx-auto px-4 sm:px-6 lg:px-0 py-6 pb-20 sm:py-8 rounded-[2.25rem] sm:rounded-xl bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12" data-v-b444fb2c><div className="w-full flex flex-col lg:flex-row items-center justify-center" data-v-b444fb2c><div data-aos="fade-up" className="w-full lg:w-1/3 mt-6 lg:mt-0 overflow-hidden space-y-6 xl:border-r border-gray-200 lg:px-8 aos-init" data-v-b444fb2c><div className="w-full flex items-center justify-between"><span className="font-medium">🔥 Trending</span> <button href="#" className="px-3 py-1 text-sm font-medium text-blue-500 flex items-center space-x-1 rounded-md hover:bg-blue-50 transition duration-300"><span>More</span> <span aria-hidden="true" role="img" className="material-design-icon chevron-right-icon"><svg fill="currentColor" width={16} height={16} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z">{/**/}</path></svg></span></button></div> <div className="flex flex-col"><div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"><div className="px-2 sm:px-6 py-2 align-middle inline-block min-w-full overflow-hidden"><table className="min-w-full"><thead><tr><th className="text-left text-sm font-medium text-gray-500">Name</th> <th className="text-left text-sm font-medium text-gray-500">Price</th> <th className="hidden sm:block text-left text-sm font-medium text-gray-500">Chart</th></tr></thead> <tbody><tr className="border-b border-gray-200"><td className="py-4 whitespace-nowrap"><div className="flex items-center space-x-2"><img src="/_nuxt/img/bitcoin.2efeba4.png" alt="" /> <span>Bitcoin</span></div></td> <td className="py-4 whitespace-nowrap"><div className="flex items-center"><span aria-hidden="true" role="img" className="material-design-icon plus-thick-icon text-emerald-500"><svg fill="currentColor" width={14} height={14} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M20 14H14V20H10V14H4V10H10V4H14V10H20V14Z">{/**/}</path></svg></span> <span>$43180.13</span></div></td> <td className="hidden sm:block whitespace-nowrap"><div><div className="w-28 h-12 -mx-2"><div className="chartjs-size-monitor"><div className="chartjs-size-monitor-expand"><div className /></div><div className="chartjs-size-monitor-shrink"><div className /></div></div><canvas id="line-chart" width={112} height={48} style={{ display: 'block', width: '112px', height: '48px' }} className="chartjs-render-monitor" /></div></div></td></tr><tr className="border-b border-gray-200"><td className="py-4 whitespace-nowrap"><div className="flex items-center space-x-2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHBSURBVHgBzZXPK0RRFMcPxu/fhbBAUQrRRDELFqKUrcUooWTlHyALFv4AbJiF8jdYSUkWShasrGxEJCmRpPz8nu6Zul3z3juvQU59mrn3nXO+795z7n1E/9DywBwoChOUSeGsHTSDeJigMCIlICb/x0GNNjCMSD+IyP8CMK8N1Io0gEZnrgd0ksI0Ijlg0OPZAiikHxDpJlOPVFYLJihNEU7eFeDDnVZNaYj0Oj7ZZM6IPcdNMOuXJMvnWSuZ4iaT8/ngreMGqBChV/AJ6sAVOEuVKOIhwElj8tb1oEnm7LgyUAyewSOYBHsyVq1kGIyAKKh0/PIFktXkkqkd+72AIzeZV02OwSnIIL3tkFnJN/NaCb/ViYi1kNmWpNkrYbsEU+LLfudakXvQB8rBKrgDHWRqkRR5AktgBUyDKrCZKplfC+/Km42BCzKF3ZZn/DtEprsSZA5lwitR0J5zcFz8uIMOwQ2Z8zMDSsVvlDzaVyPCxrdv1BpzvQas8QZY80ugubv2wa01tq8QLnoiKIFG5B1sgTdnnse8ZR9BCbTfkwdw4Mytg2tFrO/d5Ron5KukjcypXqZfMr4+FinE9/3P7AsBIj10rSdnZQAAAABJRU5ErkJggg==" alt="" /> <span>Ethereum</span></div></td> <td className="py-4 whitespace-nowrap"><div className="flex items-center"><span aria-hidden="true" role="img" className="material-design-icon minus-thick-icon text-red-500"><svg fill="currentColor" width={14} height={14} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M20 14H4V10H20V14Z">{/**/}</path></svg></span> <span>$3480.65</span></div></td> <td className="hidden sm:block whitespace-nowrap"><div><div className="w-28 h-12 -mx-2"><div className="chartjs-size-monitor"><div className="chartjs-size-monitor-expand"><div className /></div><div className="chartjs-size-monitor-shrink"><div className /></div></div><canvas id="line-chart" width={112} height={48} className="chartjs-render-monitor" style={{ display: 'block', width: '112px', height: '48px' }} /></div></div></td></tr><tr className="border-b border-gray-200"><td className="py-4 whitespace-nowrap"><div className="flex items-center space-x-2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMHSURBVHgB3VW/axRBFH5vZvZOVM6ACJJWjVgIKRIsrEKqRGuxEhsbGxsNYpM77QzYGO38A2KjlY0JqQIRToigjZBOxUYNAZG7nR9+b3Z2bzfcX3AbNm/n/Zhv5ntz3xBNysNHHcuvd2ZV5qessWQN0cjixR8dE1v3j+JkbIo1/aYOcHPjw2rOrmsDsIMh9p7YZaTY4w2kdUY296gKiEk8kHJcxCgAAHUasYA6jzrUa+/7ugS4/erjKrvQZQAoz0ikZBmJ8MECq2FV8tfzFSz75CPuBz65GEHuvvgUAYqCcgJFXBtzbcKjE/PRHPkm6v890V78fXr5UN9f+7Kq7AiguZNacSMmu0uxctK0i2IH1Hdn9OJ3AMgmjB6E46z0cybwF1fgE6eaWMuk4B0zSgOF48JqWC56hnwVkEuuADB82B6Gp58TwGQ9/Oze/len6YLF0XPGk4O1pU2+sTEcYxdpLKwzki/W/8zZL72/trBXgqiWpeutof7RHmhqxVclq6k9VNSONsVq4zbyClvGU2xgzh7Lzfbym53Zaifyb/3O/gwZs+1UmC5XOtpBfcXVasfHYm01PsBZWHh74+peJSsCpCnbRnC6mmQMPa42tomm0aJGgGmOA5WHhYZ2rd/6NtPKaMNpN+XSSm3Zmzixq3wuA4CCNumazxQgHj6bfF6HPzQxT4Oud0u/OkPDK+C+UzVRJRqysqlEudCgpB9EPvlzoQf0CY0eYpa3vFAFn/tn6gA611uZD3MiJywCKdb4QpMgOVarKCUq9ke0CgAiRfAT5IcBJtLiDMaokcWRUr2owrtXQscMwhbEbq4p46XKNqW+Uusklk2pr6myo97ao8tdvXs+dFoq30TSPDcKqVLY5l0yAldj7p5SubGV3uMnl7qyCXNKhU074HmGtmhsU/jVzkc6tEM/5Bu0xRi+tfQKt2H8PWCsYp6K1EidQ+7Aud7DtYvdshWGhrxiTHkGnFCJ61SRGlrycj8H4dfGZIh+vIo9Y9VDR7EuXtWpjqQ39uDBy3N7NJHPfweDNd8YAc+HAAAAAElFTkSuQmCC" alt="" /> <span>Solana</span></div></td> <td className="py-4 whitespace-nowrap"><div className="flex items-center"><span aria-hidden="true" role="img" className="material-design-icon plus-thick-icon text-emerald-500"><svg fill="currentColor" width={14} height={14} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M20 14H14V20H10V14H4V10H10V4H14V10H20V14Z">{/**/}</path></svg></span> <span>$150.2</span></div></td> <td className="hidden sm:block whitespace-nowrap"><div><div className="w-28 h-12 -mx-2"><div className="chartjs-size-monitor"><div className="chartjs-size-monitor-expand"><div className /></div><div className="chartjs-size-monitor-shrink"><div className /></div></div><canvas id="line-chart" width={112} height={48} className="chartjs-render-monitor" style={{ display: 'block', width: '112px', height: '48px' }} /></div></div></td></tr><tr className="border-b border-gray-200"><td className="py-4 whitespace-nowrap"><div className="flex items-center space-x-2"><img src="/_nuxt/img/dogecoin.ef19fa0.png" alt="" /> <span>Dogecoin</span></div></td> <td className="py-4 whitespace-nowrap"><div className="flex items-center"><span aria-hidden="true" role="img" className="material-design-icon plus-thick-icon text-emerald-500"><svg fill="currentColor" width={14} height={14} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M20 14H14V20H10V14H4V10H10V4H14V10H20V14Z">{/**/}</path></svg></span> <span>$0.1572</span></div></td> <td className="hidden sm:block whitespace-nowrap"><div><div className="w-28 h-12 -mx-2"><div className="chartjs-size-monitor"><div className="chartjs-size-monitor-expand"><div className /></div><div className="chartjs-size-monitor-shrink"><div className /></div></div><canvas id="line-chart" width={112} height={48} className="chartjs-render-monitor" style={{ display: 'block', width: '112px', height: '48px' }} /></div></div></td></tr></tbody></table></div></div></div></div> <div data-aos="fade-up" data-aos-delay={150} className="w-full lg:w-1/3 mt-6 lg:mt-0 overflow-hidden space-y-6 xl:border-r border-gray-200 lg:px-8 aos-init" data-v-b444fb2c><div className="w-full flex items-center justify-between"><span className="font-medium">🚀 Top Gainers</span> <button href="#" className="px-3 py-1 text-sm font-medium text-blue-500 flex items-center space-x-1 rounded-md hover:bg-blue-50 transition duration-300"><span>More</span> <span aria-hidden="true" role="img" className="material-design-icon chevron-right-icon"><svg fill="currentColor" width={16} height={16} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z">{/**/}</path></svg></span></button></div> <div className="flex flex-col"><div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"><div className="px-2 sm:px-6 py-2 align-middle inline-block min-w-full overflow-hidden"><table className="min-w-full"><thead><tr><th className="text-left text-sm font-medium text-gray-500">Name</th> <th className="text-left text-sm font-medium text-gray-500">Price</th> <th className="hidden sm:block text-left text-sm font-medium text-gray-500">Chart</th></tr></thead> <tbody><tr className="border-b border-gray-200"><td className="py-4 whitespace-nowrap"><div className="flex items-center space-x-2"><img src="/_nuxt/img/pappay.4e13578.png" alt="" /> <span>PAPPAY</span></div></td> <td className="py-4 whitespace-nowrap"><div className="flex items-center"><span aria-hidden="true" role="img" className="material-design-icon plus-thick-icon text-emerald-500"><svg fill="currentColor" width={14} height={14} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M20 14H14V20H10V14H4V10H10V4H14V10H20V14Z">{/**/}</path></svg></span> <span>$0.00374</span></div></td> <td className="hidden sm:block whitespace-nowrap"><div><div className="w-28 h-12 -mx-2"><div className="chartjs-size-monitor"><div className="chartjs-size-monitor-expand"><div className /></div><div className="chartjs-size-monitor-shrink"><div className /></div></div><canvas id="line-chart" width={112} height={48} className="chartjs-render-monitor" style={{ display: 'block', width: '112px', height: '48px' }} /></div></div></td></tr><tr className="border-b border-gray-200"><td className="py-4 whitespace-nowrap"><div className="flex items-center space-x-2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM2SURBVHgBlZXNaxNBFMDfm9mt/QhSi1gVbFPbCI3mJNqrSD0oSks9+Q+IHryoWCh4EEvBm3hrsScRPAl+IEItIp5aPanNJTXUKrX1YGOwapPdeb6ZTTa7S9Im77KzuzPv974HoAH5mTzblU8Nz670jHQ3ck7Uu1ED7F32DA7Qydg+NdMIqC5IGQDd6hDNCcA4JRoBYfDlR/zM3uZW63hoAwob2nHCAD5WbMKUAlrCDORpFBS5wTP/wJnfk36xWn63gj8NoE88wRaqfIzxulMBZBEwqSrfeSlOqAStwWP4jUECNGesIV49rQoxFrawhWnprTUgTkDPpOczespNkPlJCyWPlvlHCYSHVVRl7ZwYQA8DPpW27CaQDzYBOgDko03/pA4h8j7jcQ0RWwJKOcBBF+TtImAXg8YLgPsJxHlOw476QCGIKywJMQgBDKSbAI9yGJp5fUwZ5eJGEeS1or/HB7XpSFpNVSG6TOVOuoOdEAIERU1b4F63Qd3lVLJ+PF3xxgd1spftaiJY3qIMMI0W52rJQk2hDwLojQT10AJa5ETr+pCRPZ+5CiN9ZIUaTVuSdGtCsE+ZEgW2VoeG3rGNGxDuNix5lFKJGDAIRk5ZQlhT0O918nYirjiVF1auJq1IOwc80qABN9GWh0nRpJyLKi0yut63E1rgcL2VQO/ZoFaO1HgxlJOQ16xP63VZv2hNP1+2c8VBtVQCYW2ImuLEX7XBvdwE6iUn4wCH7YiqDuCR4+acwQ7Wb2JUBhGDoJegHsHyrGiJ/DjozbQyQH/yE6FBmMMx+I5QK3TikgPyXgHkdME0KOga+YYhD2BNgLtOo2WAltDsInAKyAmlL8KbSZF+wf4A3PH6hq32AZQ15QsSw1O5eklpUFb4HtGsBPeWDbDOxt/kZ56fFzgv960QADaqJ9SCWhIAGY9WGcRzUVeXNlN7Ww+gOuQvhsc13y14zjX3Cazwv17+99W7W/SaVs1NqbH+eX9dDSIEzBUXaSj4TeqhqWeaHjmRm1G9lhmVE2M6l5UTxGPNmQ/q2KIrKvKHR0+x3X4lSqBoH2x3vi5ICJRUCZWuH9CwaNCv1PCMHqqNnPsPVlWQgTRlc+gAAAAASUVORK5CYII=" alt="" /> <span>Bitcoin Asia</span></div></td> <td className="py-4 whitespace-nowrap"><div className="flex items-center"><span aria-hidden="true" role="img" className="material-design-icon plus-thick-icon text-emerald-500"><svg fill="currentColor" width={14} height={14} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M20 14H14V20H10V14H4V10H10V4H14V10H20V14Z">{/**/}</path></svg></span> <span>$0.02096</span></div></td> <td className="hidden sm:block whitespace-nowrap"><div><div className="w-28 h-12 -mx-2"><div className="chartjs-size-monitor"><div className="chartjs-size-monitor-expand"><div className /></div><div className="chartjs-size-monitor-shrink"><div className /></div></div><canvas id="line-chart" width={112} height={48} className="chartjs-render-monitor" style={{ display: 'block', width: '112px', height: '48px' }} /></div></div></td></tr><tr className="border-b border-gray-200"><td className="py-4 whitespace-nowrap"><div className="flex items-center space-x-2"><img src="/_nuxt/img/moonrock.71ab538.png" alt="" /> <span>MoonRock</span></div></td> <td className="py-4 whitespace-nowrap"><div className="flex items-center"><span aria-hidden="true" role="img" className="material-design-icon plus-thick-icon text-emerald-500"><svg fill="currentColor" width={14} height={14} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M20 14H14V20H10V14H4V10H10V4H14V10H20V14Z">{/**/}</path></svg></span> <span>$0.004907</span></div></td> <td className="hidden sm:block whitespace-nowrap"><div><div className="w-28 h-12 -mx-2"><div className="chartjs-size-monitor"><div className="chartjs-size-monitor-expand"><div className /></div><div className="chartjs-size-monitor-shrink"><div className /></div></div><canvas id="line-chart" width={112} height={48} className="chartjs-render-monitor" style={{ display: 'block', width: '112px', height: '48px' }} /></div></div></td></tr><tr className="border-b border-gray-200"><td className="py-4 whitespace-nowrap"><div className="flex items-center space-x-2"><img src="/_nuxt/img/ninjafloki.768bc7a.png" alt="" /> <span>NinjaFloki</span></div></td> <td className="py-4 whitespace-nowrap"><div className="flex items-center"><span aria-hidden="true" role="img" className="material-design-icon plus-thick-icon text-emerald-500"><svg fill="currentColor" width={14} height={14} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M20 14H14V20H10V14H4V10H10V4H14V10H20V14Z">{/**/}</path></svg></span> <span>$0.000123</span></div></td> <td className="hidden sm:block whitespace-nowrap"><div><div className="w-28 h-12 -mx-2"><div className="chartjs-size-monitor"><div className="chartjs-size-monitor-expand"><div className /></div><div className="chartjs-size-monitor-shrink"><div className /></div></div><canvas id="line-chart" width={112} height={48} className="chartjs-render-monitor" style={{ display: 'block', width: '112px', height: '48px' }} /></div></div></td></tr></tbody></table></div></div></div></div> <div data-aos="fade-up" data-aos-delay={300} className="w-full lg:w-1/3 mt-6 lg:mt-0 overflow-hidden space-y-6 lg:px-8 aos-init" data-v-b444fb2c><div className="w-full flex items-center justify-between"><span className="font-medium">💎 Recently Added</span> <button href="#" className="px-3 py-1 text-sm font-medium text-blue-500 flex items-center space-x-1 rounded-md hover:bg-blue-50 transition duration-300"><span>More</span> <span aria-hidden="true" role="img" className="material-design-icon chevron-right-icon"><svg fill="currentColor" width={16} height={16} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z">{/**/}</path></svg></span></button></div> <div className="flex flex-col"><div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"><div className="px-2 sm:px-6 py-2 align-middle inline-block min-w-full overflow-hidden"><table className="min-w-full"><thead><tr><th className="text-left text-sm font-medium text-gray-500">Name</th> <th className="text-left text-sm font-medium text-gray-500">Price</th> <th className="hidden sm:block text-left text-sm font-medium text-gray-500">Chart</th></tr></thead> <tbody><tr className="border-b border-gray-200"><td className="py-4 whitespace-nowrap"><div className="flex items-center space-x-2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAAAAADhgtq/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfmARcCMDgIp06qAAABDUlEQVQoz5XSMUvDQBjG8X90cMnQFPfW0UmdHMVPYhA/gINdmyLE1ToLXp0dFBwclEY3QbDg4nYnuDdfoORxSEKuLYI+y8H94Die90W/hT9Ino1OzfOyuOMIgOjAzct5mzrh0JckwMugkQvmM6zFrXu3a2FIlFcSw4n7PAJg20qQVLIBqVT0gcNcErQLCWkCpJLUKw8BVkK6B1JNv9xOJrlEAm4lJAOksp0tJz22Ygm4lpDuStnNpbOAUsYSki2lJ30bY14kwHl/s/2mSzarXw8glY2zMk8PcFVJ3qF1Y70eukXd2zggiBsI3puuR36fq8afz0e3eeptYdpmbwUI9i9nyxuSv2aT6f92ZzE//GqUhj4mcFUAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMDEtMjNUMDI6NDg6NDcrMDA6MDCKZb1WAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTAxLTIzVDAyOjQ4OjQ3KzAwOjAw+zgF6gAAAABJRU5ErkJggg==" alt="" /> <span>MetaCraft</span></div></td> <td className="py-4 whitespace-nowrap"><div className="flex items-center"><span aria-hidden="true" role="img" className="material-design-icon minus-thick-icon text-red-500"><svg fill="currentColor" width={14} height={14} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M20 14H4V10H20V14Z">{/**/}</path></svg></span> <span>$0.0608</span></div></td> <td className="hidden sm:block whitespace-nowrap"><div><div className="w-28 h-12 -mx-2"><div className="chartjs-size-monitor"><div className="chartjs-size-monitor-expand"><div className /></div><div className="chartjs-size-monitor-shrink"><div className /></div></div><canvas id="line-chart" width={112} height={48} className="chartjs-render-monitor" style={{ display: 'block', width: '112px', height: '48px' }} /></div></div></td></tr><tr className="border-b border-gray-200"><td className="py-4 whitespace-nowrap"><div className="flex items-center space-x-2"><img src="/_nuxt/img/frog.ae03a20.png" alt="" /> <span>Frog</span></div></td> <td className="py-4 whitespace-nowrap"><div className="flex items-center"><span aria-hidden="true" role="img" className="material-design-icon minus-thick-icon text-red-500"><svg fill="currentColor" width={14} height={14} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M20 14H4V10H20V14Z">{/**/}</path></svg></span> <span>$0.5875</span></div></td> <td className="hidden sm:block whitespace-nowrap"><div><div className="w-28 h-12 -mx-2"><div className="chartjs-size-monitor"><div className="chartjs-size-monitor-expand"><div className /></div><div className="chartjs-size-monitor-shrink"><div className /></div></div><canvas id="line-chart" width={112} height={48} className="chartjs-render-monitor" style={{ display: 'block', width: '112px', height: '48px' }} /></div></div></td></tr><tr className="border-b border-gray-200"><td className="py-4 whitespace-nowrap"><div className="flex items-center space-x-2"><img src="/_nuxt/img/musk-doge.f53083a.png" alt="" /> <span>Musk Doge</span></div></td> <td className="py-4 whitespace-nowrap"><div className="flex items-center"><span aria-hidden="true" role="img" className="material-design-icon plus-thick-icon text-emerald-500"><svg fill="currentColor" width={14} height={14} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M20 14H14V20H10V14H4V10H10V4H14V10H20V14Z">{/**/}</path></svg></span> <span>$0.04041</span></div></td> <td className="hidden sm:block whitespace-nowrap"><div><div className="w-28 h-12 -mx-2"><div className="chartjs-size-monitor"><div className="chartjs-size-monitor-expand"><div className /></div><div className="chartjs-size-monitor-shrink"><div className /></div></div><canvas id="line-chart" width={112} height={48} className="chartjs-render-monitor" style={{ display: 'block', width: '112px', height: '48px' }} /></div></div></td></tr><tr className="border-b border-gray-200"><td className="py-4 whitespace-nowrap"><div className="flex items-center space-x-2"><img src="/_nuxt/img/2share.785d7a0.png" alt="" /> <span>2SHARE</span></div></td> <td className="py-4 whitespace-nowrap"><div className="flex items-center"><span aria-hidden="true" role="img" className="material-design-icon plus-thick-icon text-emerald-500"><svg fill="currentColor" width={14} height={14} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M20 14H14V20H10V14H4V10H10V4H14V10H20V14Z">{/**/}</path></svg></span> <span>$1366.24</span></div></td> <td className="hidden sm:block whitespace-nowrap"><div><div className="w-28 h-12 -mx-2"><div className="chartjs-size-monitor"><div className="chartjs-size-monitor-expand"><div className /></div><div className="chartjs-size-monitor-shrink"><div className /></div></div><canvas id="line-chart" width={112} height={48} className="chartjs-render-monitor" style={{ display: 'block', width: '112px', height: '48px' }} /></div></div></td></tr></tbody></table></div></div></div></div></div></section> <section className="w-full my-24" data-v-b444fb2c><div className="relative max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden" data-v-b444fb2c><div className="col-span-12 lg:col-span-6 sm:hidden mb-8" data-v-b444fb2c><div className="w-full"><img src="/_nuxt/img/buy-and-trade.69b9f7b.webp" alt="" className="mt-4 sm:-mt-4" /></div></div> <div data-aos="fade-right" className="col-span-12 lg:col-span-6 mt-4 xl:mt-20 space-y-6 px-4 aos-init" data-v-b444fb2c><h2 className="text-4xl font-semibold sm:pr-8 xl:pr-12" data-v-b444fb2c>
-                                Buy &amp; trade on the <br className="hidden sm:block" data-v-b444fb2c />
-                                original crypto exchange.
-                            </h2> <p className="paragraph" data-v-b444fb2c>
-                                    Buy now and get 40% extra bonus Minimum pre-sale amount 25 Crypto Coin. We accept BTC crypto-currency
-                                </p> <div className="space-y-6 lg:pr-12" data-v-b444fb2c><div className="flex items-center space-x-4" data-v-b444fb2c><div className="lg:max-w-[336px] w-full flex items-center relative px-5 py-3 border border-[#0c66ee] rounded-xl"><span className="text-sm font-medium pr-5 py-3 text-[#0c66ee] border-r border-[#0c66ee]"> Amount </span> <input type="number" name="amount" defaultValue={5.000} className="w-full text-lg font-medium text-right border-none ring-0 focus:outline-none focus:ring-0" /></div> <div className="relative w-full max-w-[106px] sm:max-w-[159px]"><button type="button" className="w-full flex items-center justify-center space-x-1 relative sm:px-6 py-[1.35rem] border border-[#0c66ee] rounded-xl text-sm font-medium"><img src="/_nuxt/img/eng.52eb53e.png" alt="" className="flex-shrink-0 h-6 w-6 rounded-full" /> <span className="ml-3 block truncate">USD</span> <span aria-hidden="true" role="img" className="material-design-icon chevron-down-icon"><svg fill="currentColor" width={20} height={20} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z">{/**/}</path></svg></span></button> {/**/}</div></div> <div className="flex items-center space-x-4" data-v-b444fb2c><div className="lg:max-w-[336px] w-full flex items-center relative px-5 py-3 border border-[#0c66ee] rounded-xl"><span className="text-sm font-medium pr-5 py-3 text-[#0c66ee] border-r border-[#0c66ee]"> Get </span> <input type="number" name="get" defaultValue="0.10901" className="w-full text-lg font-medium text-right border-none ring-0 focus:outline-none focus:ring-0" /></div> <div className="relative w-full max-w-[106px] sm:max-w-[159px]"><button type="button" className="w-full flex items-center justify-center space-x-1 relative sm:px-6 py-[1.35rem] border border-[#0c66ee] rounded-xl text-sm font-medium"><img src="/_nuxt/img/bitcoin.2efeba4.png" alt="" className="flex-shrink-0 h-6 w-6 rounded-full" /> <span className="ml-3 block truncate">BTC</span> <span aria-hidden="true" role="img" className="material-design-icon chevron-down-icon"><svg fill="currentColor" width={20} height={20} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z">{/**/}</path></svg></span></button> {/**/}</div></div> <button className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 w-full px-5 py-4 bg-blue-gradient text-white text-base font-medium" data-v-b444fb2c>Buy Now</button></div></div> <div data-aos="fade-left" className="col-span-12 lg:col-span-6 hidden sm:block aos-init" data-v-b444fb2c><div className="w-full"><img src="/_nuxt/img/buy-and-trade.69b9f7b.webp" alt="" className="mt-4 sm:-mt-4" /></div></div></div></section> <section className="bg-partner relative max-w-full sm:mx-6 my-24 shadow sm:rounded-2xl overflow-hidden" data-v-b444fb2c><div className="w-full px-6 sm:px-0 py-16 flex flex-col items-center justify-center space-y-4 text-center" data-v-b444fb2c><h3 data-aos="flip-down" className="text-2xl text-neutral-800 font-semibold aos-init" data-v-b444fb2c>Trusted Partners Worldwide</h3> <p data-aos="flip-down" className="paragraph aos-init" data-v-b444fb2c>We're partners with countless major organisations around the globe</p> <div data-aos="fade-up" className="flex flex-wrap items-center justify-center aos-init" data-v-b444fb2c><div data-v-b444fb2c><img src="/_nuxt/img/clever.8a49f14.png" alt="" className="sm:w-1/2 lg:w-72 mx-auto" /></div><div data-v-b444fb2c><img src="/_nuxt/img/diamon-cutts.05f2972.png" alt="" className="sm:w-1/2 lg:w-72 mx-auto" /></div><div data-v-b444fb2c><img src="/_nuxt/img/swiss-finance.7281595.png" alt="" className="sm:w-1/2 lg:w-72 mx-auto" /></div><div data-v-b444fb2c><img src="/_nuxt/img/gambio.da697ab.png" alt="" className="sm:w-1/2 lg:w-72 mx-auto" /></div></div></div></section> <section className="w-full my-36" data-v-b444fb2c><div data-aos="fade-down" className="relative max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden aos-init" data-v-b444fb2c><div className="col-span-12 lg:col-span-7" data-v-b444fb2c><div className="w-full" data-v-b444fb2c><img src="/_nuxt/img/nefa-cc.4277338.webp" alt="" className="w-[95%]" data-v-b444fb2c /></div></div> <div className="col-span-12 lg:col-span-5 space-y-6 px-4 sm:px-6 mt-20" data-v-b444fb2c><h2 className="text-4xl font-semibold" data-v-b444fb2c>
-                                    Introducing the <span className="text-header-gradient" data-v-b444fb2c>NEFA</span> Credit Card
-                                </h2> <p className="paragraph" data-v-b444fb2c>Subject to cardholder and rewards terms which will be available at application.</p> <ul className="space-y-4 sm:space-y-2" data-v-b444fb2c><li className="space-y-2" data-v-b444fb2c><div className="flex items-center space-x-2"><span aria-hidden="true" role="img" className="material-design-icon check-circle-icon text-[#0c66ee]"><svg fill="currentColor" width={20} height={20} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z">{/**/}</path></svg></span> <span>Up to 3% back on purchases</span></div> </li> <li className="space-y-2" data-v-b444fb2c><div className="flex items-center space-x-2"><span aria-hidden="true" role="img" className="material-design-icon check-circle-icon text-[#0c66ee]"><svg fill="currentColor" width={20} height={20} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z">{/**/}</path></svg></span> <span>Earn rewards in bitcoin or any crypto on NEFA</span></div> </li> <li className="space-y-2" data-v-b444fb2c><div className="flex items-center space-x-2"><span aria-hidden="true" role="img" className="material-design-icon check-circle-icon text-[#0c66ee]"><svg fill="currentColor" width={20} height={20} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z">{/**/}</path></svg></span> <span>No annual fee</span></div> </li></ul> <button className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 w-full sm:max-w-[240px] px-10 py-4 bg-inherit text-gradient border border-[#0c66ee] text-base" data-v-b444fb2c>Join the waitlist</button></div></div></section> <section className="bg-trading-tools relative max-w-full sm:mx-4 my-20 py-16 shadow rounded-2xl overflow-hidden" data-v-b444fb2c><div className="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6" data-v-b444fb2c><div className="col-span-12 lg:col-span-6 sm:hidden" data-v-b444fb2c><div className="w-full sm:mt-20 xl:mt-0"><img src="/_nuxt/img/advanced-trading-tools.4f95ae5.webp" alt="" className="w-full" /></div></div> <div data-aos="fade-right" className="col-span-12 lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8 aos-init" data-v-b444fb2c><h2 className="text-4xl font-semibold" data-v-b444fb2c>Advanced Trading <span className="text-header-gradient" data-v-b444fb2c>Tools</span></h2> <div className="space-y-2" data-v-b444fb2c><h4 className="text-lg font-medium" data-v-b444fb2c>Professional Access, Non-stop Availability</h4> <p className="paragraph text-sm xl:text-base" data-v-b444fb2c>
-                                    We provide premium access to crypto trading for both individuals and institutions through high liquidity,
-                                    reliable order execution and constant uptime.
-                                </p></div> <div className="space-y-2" data-v-b444fb2c><h4 className="text-lg font-medium" data-v-b444fb2c>A Range of Powerful Apis</h4> <p className="paragraph text-sm xl:text-base" data-v-b444fb2c>
-                                    Set up your own trading interface or deploy your algorithmic strategy with our high-performance FIX and
-                                    HTTP APIs. Connect to our WebSocket for real-time data streaming.
-                                </p></div> <div className="space-y-2" data-v-b444fb2c><h4 className="text-lg font-medium" data-v-b444fb2c>Customer Support</h4> <p className="paragraph text-sm xl:text-base" data-v-b444fb2c>
-                                    Premium 24/7 support available to all customers worldwide by phone or email. Dedicated account managers
-                                    for partners.
-                                </p></div> <div className="flex flex-col sm:flex-row" data-v-b444fb2c><button className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 px-10 py-4 bg-inherit text-gradient border border-[#4A8FF6] text-base" data-v-b444fb2c>
-                                    Get Started
-                                </button> <button className="text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 bg-inherit text-[#4A8FF6] px-10 py-4 text-center underline rounded-full" data-v-b444fb2c>
-                                            Learn More
-                                        </button></div></div> <div data-aos="fade-left" className="col-span-12 lg:col-span-6 hidden sm:block aos-init" data-v-b444fb2c><div className="w-full sm:mt-20 xl:mt-0"><img src="/_nuxt/img/advanced-trading-tools.4f95ae5.webp" alt="" className="w-full" /></div></div></div></section> <section className="w-full my-24" data-v-b444fb2c><div className="relative max-w-screen-xl px-8 mx-auto grid grid-cols-12 gap-x-6" data-v-b444fb2c><div data-aos="fade-right" className="col-span-12 lg:col-span-6 aos-init" data-v-b444fb2c><div className="w-full" data-v-b444fb2c><img src="/_nuxt/img/industry-leading-security.16b398c.webp" alt="" className="w-full" data-v-b444fb2c /></div></div> <div data-aos="fade-left" className="col-span-12 lg:col-span-5 space-y-8 sm:space-y-6 mt-8 xl:px-8 aos-init" data-v-b444fb2c><h2 className="text-4xl font-semibold" data-v-b444fb2c>Industry-leading security from day one</h2> <ul className="space-y-8 sm:space-y-4" data-v-b444fb2c><li className="space-y-2" data-v-b444fb2c><div className="flex items-center space-x-2"><span aria-hidden="true" role="img" className="material-design-icon check-circle-icon text-[#0c66ee]"><svg fill="currentColor" width={20} height={20} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z">{/**/}</path></svg></span> <span>Safety, security and compliance</span></div> <p className="text-sm text-gray-700 leading-relaxed" data-v-b444fb2c>
-                                            NEFA is a licensed New York trust company that undergoes regular bank exams and is subject to the
-                                            cybersecurity audits conducted by the New York Department of Financial Services.
-                                            <span className="underline" data-v-b444fb2c>Learn more</span> about our commitment to security.
-                                        </p></li> <li className="space-y-2" data-v-b444fb2c><div className="flex items-center space-x-2"><span aria-hidden="true" role="img" className="material-design-icon check-circle-icon text-[#0c66ee]"><svg fill="currentColor" width={20} height={20} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z">{/**/}</path></svg></span> <span>Hardware security keys</span></div> <p className="text-sm text-gray-700 leading-relaxed" data-v-b444fb2c>
-                                            With NEFA you can secure your account with a hardware security key via WebAuthn.
-                                        </p></li> <li className="space-y-2" data-v-b444fb2c><div className="flex items-center space-x-2"><span aria-hidden="true" role="img" className="material-design-icon check-circle-icon text-[#0c66ee]"><svg fill="currentColor" width={20} height={20} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z">{/**/}</path></svg></span> <span>SOC Certifications</span></div> <p className="text-sm text-gray-700 leading-relaxed" data-v-b444fb2c>
-                                            NEFA is <span className="underline" data-v-b444fb2c>SOC 1 Type 2</span> and
-                                            <span className="underline" data-v-b444fb2c>SOC 2 Type 2</span> compliant. We are the world’s first cryptocurrency exchange
-                                            and custodian to complete these exams.
-                                        </p></li></ul></div></div></section> <section className="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow sm:rounded-2xl overflow-hidden" data-v-b444fb2c><div className="w-full py-16 flex flex-col items-center" data-v-b444fb2c><h2 data-aos="flip-down" className="text-3xl sm:text-4xl font-semibold text-center aos-init" data-v-b444fb2c>
-                                            Get started in just a few minutes
-                                        </h2> <div data-aos="fade-up" className="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8 aos-init" data-v-b444fb2c><div className="max-w-[280px] xl:max-w-[363px] space-y-6 sm:space-y-3 text-center" data-v-b444fb2c><img src="/_nuxt/img/sign-up.4afd242.png" alt="" className="max-w-[245px] mx-auto" /> <h3 className="text-xl text-neutral-800 font-semibold">Sign Up</h3> <p className="text-sm text-gray-700 leading-relaxed">
-                                            Sign up for your free NEFA Wallet on web, iOS or Android and follow our easy process to set up your profile
-                                        </p></div><div className="max-w-[280px] xl:max-w-[363px] space-y-6 sm:space-y-3 text-center" data-v-b444fb2c><img src="/_nuxt/img/fund.93372b0.png" alt="" className="max-w-[245px] mx-auto" /> <h3 className="text-xl text-neutral-800 font-semibold">Fund</h3> <p className="text-sm text-gray-700 leading-relaxed">
-                                            Choose your preferred payment method such as bank transfer or credit card to top up your NEFA Wallet
-                                        </p></div><div className="max-w-[280px] xl:max-w-[363px] space-y-6 sm:space-y-3 text-center" data-v-b444fb2c><img src="/_nuxt/img/buy-crypto.46d8692.png" alt="" className="max-w-[245px] mx-auto" /> <h3 className="text-xl text-neutral-800 font-semibold">Buy Crypto</h3> <p className="text-sm text-gray-700 leading-relaxed">
-                                            Buy Bitcoin or Ethereum, then securely store it in your Wallet or send it on easily to your friends anywhere
-                                        </p></div> <img src="/_nuxt/img/arrow.60f4e50.png" alt="" className="hidden lg:inline-block absolute top-32 left-64 xl:left-[22rem] w-24 xl:w-[9.5rem]" data-v-b444fb2c /> <img src="/_nuxt/img/arrow.60f4e50.png" alt="" className="hidden lg:inline-block absolute top-32 right-64 xl:right-[22rem] w-24 xl:w-[9.5rem]" data-v-b444fb2c /></div></div></section> <section className="w-full my-24" data-v-b444fb2c><div className="relative max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden" data-v-b444fb2c><div data-aos="fade-right" data-aos-delay={150} className="col-span-12 lg:col-span-6 aos-init" data-v-b444fb2c><div className="w-full" data-v-b444fb2c><img src="/_nuxt/img/faq.05e12ee.webp" alt="" className="w-full" data-v-b444fb2c /></div></div> <div data-aos="fade-left" data-aos-delay={150} className="col-span-12 lg:col-span-6 px-4 sm:px-6 mt-8 aos-init" data-v-b444fb2c><span className="text-base text-gradient font-semibold uppercase mb-4 sm:mb-2" data-v-b444fb2c>Support</span> <h2 className="text-3xl sm:text-4xl font-semibold mb-10 sm:mb-6" data-v-b444fb2c>Frequently asked questions</h2> <ul className="shadow-box" data-v-b444fb2c><li className="relative border-b-2 border-gray-200" data-v-b444fb2c><button type="button" className="w-full py-4 text-left"><div className="flex items-center justify-between"><span className="font-medium">Why should I choose NEFA?</span> <span aria-hidden="true" role="img" className="material-design-icon chevron-down-icon"><svg fill="currentColor" width={20} height={20} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z">{/**/}</path></svg></span></div></button> {/**/}</li><li className="relative border-b-2 border-gray-200" data-v-b444fb2c><button type="button" className="w-full py-4 text-left"><div className="flex items-center justify-between"><span className="font-medium">How secure is NEFA?</span> <span aria-hidden="true" role="img" className="material-design-icon chevron-down-icon"><svg fill="currentColor" width={20} height={20} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z">{/**/}</path></svg></span></div></button> {/**/}</li><li className="relative border-b-2 border-gray-200" data-v-b444fb2c><button type="button" className="w-full py-4 text-left"><div className="flex items-center justify-between"><span className="font-medium">Do I have to buy a whole Bitcoin?</span> <span aria-hidden="true" role="img" className="material-design-icon chevron-down-icon"><svg fill="currentColor" width={20} height={20} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z">{/**/}</path></svg></span></div></button> {/**/}</li><li className="relative border-b-2 border-gray-200" data-v-b444fb2c><button type="button" className="w-full py-4 text-left"><div className="flex items-center justify-between"><span className="font-medium">How do I actually buy Bitcoin?</span> <span aria-hidden="true" role="img" className="material-design-icon chevron-down-icon"><svg fill="currentColor" width={20} height={20} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z">{/**/}</path></svg></span></div></button> {/**/}</li></ul></div></div></section> <div className="w-full my-10 flex justify-center" data-v-b444fb2c><a data-aos="flip-down" data-aos-delay={150} href="#navbar" className="px-6 py-3 flex items-center space-x-2 bg-[#FAFAFA] hover:bg-gray-100 hover:shadow-md border border-[#DDDDDD] rounded-md text-gray-700 aos-init" data-v-b444fb2c><span data-v-b444fb2c>Back to top</span> <span aria-hidden="true" role="img" className="material-design-icon arrow-up-icon" data-v-b444fb2c><svg fill="currentColor" width={20} height={20} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z">{/**/}</path></svg></span></a></div></div></main> <footer className="max-w-screen-xl px-8 mx-auto"><div className="w-full border-y border-[#DDDDDD]"><div className="grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1"><div className="md:w-full lg:w-full w-full sm:w-1/2 xl:w-fit flex flex-col sm:flex-row sm:px-6 py-6 sm:py-12 sm:space-x-10 sm:border-r-0 border-[#DDDDDD]"><div className="sm:hidden xl:block mb-6 sm:mb-0"><a href="#"><img src="/_nuxt/img/nefa.37ff23e.svg" alt="Nefa Logo" className="w-24 -mt-2" /></a></div> <ul className="space-y-4"><li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                                            Cryptocurrency
-                                        </a></li> <li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                                            Exchanges
-                                        </a></li> <li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                                            Watchlist
-                                        </a></li> <li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                                            Portfolio
-                                        </a></li> <li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                                            NFT
-                                        </a></li></ul></div> <div className="md:w-full lg:w-full lg:border-r w-full sm:w-1/2 xl:w-fit sm:px-16 py-6 sm:py-12 border-t sm:border-t xl:border-r border-[#DDDDDD]"><ul className="space-y-4"><li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                                            Products
-                                        </a></li> <li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                                            About Us
-                                        </a></li> <li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                                            Careers
-                                        </a></li> <li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                                            Blog
-                                        </a></li> <li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                                            Security
-                                        </a></li></ul></div> <div className="md:w-full md:border-t lg:w-full w-full sm:w-1/2 xl:w-fit sm:px-16 py-6 sm:py-12 border-t sm:border-t-0 sm:border-r-0 border-[#DDDDDD]"><ul className="space-y-4"><li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                                            Help Center
-                                        </a></li> <li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                                            Contact Us
-                                        </a></li> <li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                                            System Status
-                                        </a></li> <li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                                            Area of Avaibility
-                                        </a></li> <li className="w-full"><a href="#" className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline">
-                                            Privacy Policy
-                                        </a></li></ul></div> <div className="md:w-full md:border-t lg:w-full sm:px-10 py-6 sm:py-12 w-full sm:w-1/2 xl:w-[22rem] space-y-4 sm:border-t border-[#DDDDDD]"><h5 className="text-sm font-medium text-[#666666] focus:outline-none focus:shadow-outline">Newsletter</h5> <p className="text-sm text-[#666666] focus:outline-none focus:shadow-outline">
-                                            Never miss anything crypto when <br className="sm:hidden" />you're on the go
-                                        </p> <div className="flex items-center space-x-2"><input type="text" placeholder="Enter your email" className="w-full px-2 py-4 sm:py-3 rounded-lg sm:rounded-md text-sm focus:outline-none border border-[#AAAAAA] placeholder-[#888]" /> <button className="bg-blue-gradient px-4 py-4 sm:py-3 rounded-md text-white hover:shadow-md transition duration-300"><span aria-hidden="true" role="img" className="material-design-icon arrow-right-icon"><svg fill="currentColor" width={20} height={20} viewBox="0 0 24 24" className="material-design-icon__svg"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z">{/**/}</path></svg></span></button></div></div></div></div> <div className="py-8 sm:py-4 text-center text-sm text-[#666666] hover:text-gray-900">
-                    © Copyright 2022 NEFA LLC. All rights reserved
-                </div></footer></div>
+  return (
+    <>
+      <Navbar />
+      <main>
+        {/* =======================
+Main Banner START */}
+        <section className="position-relative overflow-hidden pt-5 pt-lg-3">
+          {/* SVG START */}
+          <figure className="position-absolute top-50 start-0 translate-middle-y ms-n7 d-none d-xxl-block">
+            <svg className="rotate-74 fill-danger opacity-1">
+              <circle cx="180.4" cy="15.5" r="7.7" />
+              <path d="m159.9 22.4c-3.8 0-6.9-3.1-6.9-6.9s3.1-6.9 6.9-6.9 6.9 3.1 6.9 6.9-3.1 6.9-6.9 6.9z" />
+              <ellipse
+                transform="matrix(.3862 -.9224 .9224 .3862 71.25 138.08)"
+                cx="139.4"
+                cy="15.5"
+                rx="6.1"
+                ry="6.1"
+              />
+              <circle cx="118.9" cy="15.5" r="5.4" />
+              <path d="m98.4 20.1c-2.5 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6-2.1 4.6-4.6 4.6z" />
+              <path d="m77.9 19.3c-2.1 0-3.8-1.7-3.8-3.8s1.7-3.8 3.8-3.8 3.8 1.7 3.8 3.8-1.7 3.8-3.8 3.8z" />
+              <path d="m57.3 18.6c-1.7 0-3.1-1.4-3.1-3.1s1.4-3.1 3.1-3.1 3.1 1.4 3.1 3.1-1.4 3.1-3.1 3.1z" />
+              <path d="m36.8 17.8c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3z" />
+              <circle cx="16.3" cy="15.5" r="1.6" />
+              <circle cx="180.4" cy="38.5" r="7.7" />
+              <path d="m159.9 45.3c-3.8 0-6.9-3.1-6.9-6.9s3.1-6.9 6.9-6.9 6.9 3.1 6.9 6.9-3.1 6.9-6.9 6.9z" />
+              <ellipse
+                transform="matrix(.8486 -.5291 .5291 .8486 .7599 79.566)"
+                cx="139.4"
+                cy="38.5"
+                rx="6.1"
+                ry="6.1"
+              />
+              <circle cx="118.9" cy="38.5" r="5.4" />
+              <path d="m98.4 43.1c-2.5 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6-2.1 4.6-4.6 4.6z" />
+              <circle cx="77.9" cy="38.5" r="3.8" />
+              <path d="m57.3 41.5c-1.7 0-3.1-1.4-3.1-3.1s1.4-3.1 3.1-3.1 3.1 1.4 3.1 3.1c0 1.8-1.4 3.1-3.1 3.1z" />
+              <path d="m36.8 40.8c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3z" />
+              <circle cx="16.3" cy="38.5" r="1.6" />
+              <circle cx="180.4" cy="61.4" r="7.7" />
+              <path d="m159.9 68.3c-3.8 0-6.9-3.1-6.9-6.9s3.1-6.9 6.9-6.9 6.9 3.1 6.9 6.9-3.1 6.9-6.9 6.9z" />
+              <ellipse
+                transform="matrix(.3862 -.9224 .9224 .3862 28.902 166.26)"
+                cx="139.4"
+                cy="61.4"
+                rx="6.1"
+                ry="6.1"
+              />
+              <circle cx="118.9" cy="61.4" r="5.4" />
+              <path d="m98.4 66c-2.5 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6c0 2.6-2.1 4.6-4.6 4.6z" />
+              <path d="m77.9 65.2c-2.1 0-3.8-1.7-3.8-3.8s1.7-3.8 3.8-3.8 3.8 1.7 3.8 3.8-1.7 3.8-3.8 3.8z" />
+              <path d="m57.3 64.5c-1.7 0-3.1-1.4-3.1-3.1s1.4-3.1 3.1-3.1 3.1 1.4 3.1 3.1-1.4 3.1-3.1 3.1z" />
+              <path d="m36.8 63.7c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3z" />
+              <circle cx="16.3" cy="61.4" r="1.6" />
+              <circle cx="180.4" cy="84.4" r="7.7" />
+              <path d="m159.9 91.3c-3.8 0-6.9-3.1-6.9-6.9s3.1-6.9 6.9-6.9 6.9 3.1 6.9 6.9-3.1 6.9-6.9 6.9z" />
+              <path d="m139.4 90.5c-3.4 0-6.1-2.7-6.1-6.1s2.7-6.1 6.1-6.1 6.1 2.7 6.1 6.1c0 3.3-2.7 6.1-6.1 6.1z" />
+              <circle cx="118.9" cy="84.4" r="5.4" />
+              <path d="m98.4 89c-2.5 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6-2.1 4.6-4.6 4.6z" />
+              <path d="m77.9 88.2c-2.1 0-3.8-1.7-3.8-3.8s1.7-3.8 3.8-3.8 3.8 1.7 3.8 3.8-1.7 3.8-3.8 3.8z" />
+              <path d="m57.3 87.4c-1.7 0-3.1-1.4-3.1-3.1s1.4-3.1 3.1-3.1 3.1 1.4 3.1 3.1c0 1.8-1.4 3.1-3.1 3.1z" />
+              <path d="m36.8 86.7c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3z" />
+              <circle cx="16.3" cy="84.4" r="1.6" />
+              <circle cx="180.4" cy="107.3" r="7.7" />
+              <path d="m159.9 114.2c-3.8 0-6.9-3.1-6.9-6.9s3.1-6.9 6.9-6.9 6.9 3.1 6.9 6.9-3.1 6.9-6.9 6.9z" />
+              <path d="m139.4 113.4c-3.4 0-6.1-2.7-6.1-6.1s2.7-6.1 6.1-6.1 6.1 2.7 6.1 6.1-2.7 6.1-6.1 6.1z" />
+              <circle cx="118.9" cy="107.3" r="5.4" />
+              <path d="m98.4 111.9c-2.5 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6c0 2.6-2.1 4.6-4.6 4.6z" />
+              <path d="m77.9 111.2c-2.1 0-3.8-1.7-3.8-3.8s1.7-3.8 3.8-3.8 3.8 1.7 3.8 3.8-1.7 3.8-3.8 3.8z" />
+              <path d="m57.3 110.4c-1.7 0-3.1-1.4-3.1-3.1s1.4-3.1 3.1-3.1 3.1 1.4 3.1 3.1-1.4 3.1-3.1 3.1z" />
+              <path d="m36.8 109.6c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3c0.1 1.3-1 2.3-2.3 2.3z" />
+              <circle cx="16.3" cy="107.3" r="1.6" />
+              <circle cx="180.4" cy="130.3" r="7.7" />
+              <path d="m159.9 137.2c-3.8 0-6.9-3.1-6.9-6.9s3.1-6.9 6.9-6.9 6.9 3.1 6.9 6.9-3.1 6.9-6.9 6.9z" />
+              <ellipse
+                transform="matrix(.3862 -.9224 .9224 .3862 -34.62 208.52)"
+                cx="139.4"
+                cy="130.3"
+                rx="6.1"
+                ry="6.1"
+              />
+              <circle cx="118.9" cy="130.3" r="5.4" />
+              <path d="m98.4 134.9c-2.5 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6-2.1 4.6-4.6 4.6z" />
+              <path d="m77.9 134.1c-2.1 0-3.8-1.7-3.8-3.8s1.7-3.8 3.8-3.8 3.8 1.7 3.8 3.8-1.7 3.8-3.8 3.8z" />
+              <path d="m57.3 133.4c-1.7 0-3.1-1.4-3.1-3.1s1.4-3.1 3.1-3.1 3.1 1.4 3.1 3.1-1.4 3.1-3.1 3.1z" />
+              <path d="m36.8 132.6c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3z" />
+              <circle cx="16.3" cy="130.3" r="1.6" />
+              <circle cx="180.4" cy="153.2" r="7.7" />
+              <path d="m159.9 160.1c-3.8 0-6.9-3.1-6.9-6.9s3.1-6.9 6.9-6.9 6.9 3.1 6.9 6.9-3.1 6.9-6.9 6.9z" />
+              <ellipse
+                transform="matrix(.3862 -.9224 .9224 .3862 -55.794 222.61)"
+                cx="139.4"
+                cy="153.2"
+                rx="6.1"
+                ry="6.1"
+              />
+              <circle cx="118.9" cy="153.2" r="5.4" />
+              <path d="m98.4 157.8c-2.5 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6c0 2.6-2.1 4.6-4.6 4.6z" />
+              <circle cx="77.9" cy="153.2" r="3.8" />
+              <path d="m57.3 156.3c-1.7 0-3.1-1.4-3.1-3.1s1.4-3.1 3.1-3.1 3.1 1.4 3.1 3.1-1.4 3.1-3.1 3.1z" />
+              <path d="m36.8 155.5c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3z" />
+              <circle cx="16.3" cy="153.2" r="1.6" />
+              <circle cx="180.4" cy="176.2" r="7.7" />
+              <path d="m159.9 183.1c-3.8 0-6.9-3.1-6.9-6.9s3.1-6.9 6.9-6.9 6.9 3.1 6.9 6.9-3.1 6.9-6.9 6.9z" />
+              <ellipse
+                transform="matrix(.3862 -.9224 .9224 .3862 -76.968 236.7)"
+                cx="139.4"
+                cy="176.2"
+                rx="6.1"
+                ry="6.1"
+              />
+              <circle cx="118.9" cy="176.2" r="5.4" />
+              <path d="m98.4 180.8c-2.5 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6-2.1 4.6-4.6 4.6z" />
+              <path d="m77.9 180c-2.1 0-3.8-1.7-3.8-3.8s1.7-3.8 3.8-3.8 3.8 1.7 3.8 3.8-1.7 3.8-3.8 3.8z" />
+              <path d="m57.3 179.3c-1.7 0-3.1-1.4-3.1-3.1s1.4-3.1 3.1-3.1 3.1 1.4 3.1 3.1-1.4 3.1-3.1 3.1z" />
+              <path d="m36.8 178.5c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3z" />
+              <circle cx="16.3" cy="176.2" r="1.6" />
+            </svg>
+          </figure>
+          {/* SVG END */}
+          {/* SVG START */}
+          <span className="position-absolute top-50 end-0 translate-middle-y mt-5 me-n5 d-none d-xxl-inline-flex">
+            <svg className="fill-warning rotate-186 opacity-8">
+              <path d="m35.4 54.2c0 0.6 0 1.1-0.1 1.7-0.9 9.3-9.2 16.1-18.5 15.1-4.5-0.4-8.5-2.6-11.4-6.1-2.8-3.5-4.2-7.9-3.7-12.4 0.9-9.3 9.2-16.1 18.5-15.1 4.5 0.4 8.5 2.6 11.4 6.1 2.4 3 3.8 6.8 3.8 10.7zm-33.4 0c0 3.8 1.3 7.5 3.8 10.4 2.8 3.4 6.8 5.5 11.2 6 9.1 0.9 17.2-5.8 18.1-14.8 0.4-4.4-0.9-8.7-3.7-12.1s-6.8-5.5-11.2-6c-9.2-0.8-17.3 5.8-18.2 14.9v1.6z" />
+              <path d="m39 54.1c0 1.1-0.1 2.2-0.3 3.3-1.8 9.8-11.2 16.2-21 14.4-4.7-0.8-8.8-3.5-11.5-7.4-2.7-4-3.7-8.7-2.8-13.5 1.8-9.8 11.2-16.2 21-14.4 4.7 0.9 8.8 3.6 11.5 7.5 2.1 3 3.1 6.6 3.1 10.1zm-35.6 0.1c0 3.5 1.1 7 3.1 9.9 2.7 3.9 6.7 6.5 11.3 7.4 9.6 1.8 18.8-4.5 20.6-14.1 0.9-4.6-0.1-9.3-2.8-13.2s-6.7-6.5-11.3-7.4c-9.6-1.8-18.8 4.5-20.6 14.1-0.2 1.1-0.3 2.2-0.3 3.3z" />
+              <path d="m42.8 54.2c0 1.7-0.2 3.3-0.7 5-2.7 10.2-13.3 16.3-23.5 13.6-5-1.3-9.1-4.5-11.7-8.9-2.5-4.5-3.2-9.7-1.9-14.7 2.7-10.2 13.3-16.3 23.5-13.6 5 1.3 9.1 4.5 11.7 8.9 1.7 3 2.6 6.3 2.6 9.7zm-38.1 0c0 3.3 0.9 6.5 2.5 9.4 2.5 4.4 6.6 7.5 11.5 8.8 10 2.7 20.4-3.3 23.1-13.4 1.3-4.9 0.6-9.9-1.9-14.3s-6.6-7.5-11.5-8.8c-10-2.6-20.4 3.4-23 13.4-0.5 1.6-0.7 3.3-0.7 4.9z" />
+              <path d="m46.7 54.2c0 2.2-0.4 4.5-1.1 6.6-3.6 10.7-15.3 16.5-26.1 12.8-5.2-1.8-9.4-5.4-11.8-10.4-2.4-4.9-2.8-10.5-1-15.7 3.6-10.6 15.3-16.4 26-12.8l-0.1 0.2 0.1-0.2c5.2 1.8 9.4 5.4 11.8 10.4 1.5 2.9 2.2 6 2.2 9.1zm-40.8 0c0 3.1 0.7 6.1 2.1 8.9 2.4 4.8 6.5 8.4 11.6 10.2 10.5 3.6 22-2.1 25.6-12.6 1.7-5.1 1.4-10.6-1-15.4s-6.5-8.4-11.6-10.2c-10.5-3.6-22 2.1-25.6 12.6-0.7 2.1-1.1 4.3-1.1 6.5z" />
+              <path d="m50.7 54.2c0 2.8-0.5 5.6-1.6 8.2-4.5 11.2-17.4 16.6-28.6 12.1-5.4-2.2-9.7-6.4-12-11.8s-2.3-11.4-0.1-16.8c4.5-11.2 17.4-16.6 28.6-12.1 5.4 2.2 9.7 6.4 12 11.8 1.1 2.8 1.7 5.7 1.7 8.6zm-43.6 0c0 2.8 0.6 5.7 1.7 8.4 2.2 5.3 6.4 9.4 11.8 11.6 11 4.5 23.6-0.9 28.1-11.9 2.2-5.3 2.1-11.2-0.1-16.5s-6.4-9.4-11.8-11.6c-11-4.5-23.6 0.9-28.1 11.9-1.1 2.6-1.6 5.3-1.6 8.1z" />
+              <path d="m54.7 54.2c0 3.4-0.7 6.7-2.2 9.9-5.5 11.7-19.5 16.7-31.2 11.3-5.7-2.6-10-7.3-12.1-13.2s-1.8-12.2 0.8-17.9c5.5-11.7 19.4-16.8 31.1-11.3 5.7 2.6 10 7.3 12.1 13.2 1 2.6 1.5 5.3 1.5 8zm-46.5 0c0 2.7 0.5 5.3 1.4 7.9 2.1 5.8 6.3 10.4 11.9 13 11.5 5.4 25.3 0.4 30.6-11.1 2.6-5.6 2.9-11.8 0.8-17.6s-6.3-10.4-11.9-13l0.1-0.2-0.1 0.1c-11.5-5.4-25.3-0.4-30.6 11.1-1.5 3.1-2.2 6.5-2.2 9.8z" />
+              <path d="m58.7 54.2c0 4-1 7.9-2.8 11.5-6.4 12.2-21.5 16.9-33.6 10.6-6-3.1-10.3-8.3-12.3-14.6s-1.4-13.1 1.7-19c6.3-12.2 21.4-17 33.6-10.6 5.9 3.1 10.3 8.3 12.3 14.6 0.8 2.5 1.1 5 1.1 7.5zm-49.5 0c0 2.5 0.4 5 1.1 7.4 2 6.3 6.3 11.4 12.1 14.4 12 6.3 26.9 1.6 33.1-10.4 3-5.8 3.6-12.5 1.7-18.7-2-6.3-6.3-11.4-12.1-14.4-12-6.3-26.9-1.6-33.1 10.4-1.9 3.5-2.8 7.4-2.8 11.3z" />
+              <path d="m62.9 54.2c0 4.6-1.2 9.1-3.5 13.1-7.3 12.7-23.6 17.1-36.2 9.9-6.1-3.5-10.5-9.2-12.4-16s-0.9-14 2.6-20.1c7.3-12.7 23.5-17.1 36.2-9.8l-0.1 0.2 0.1-0.2c6.1 3.5 10.5 9.2 12.4 16 0.5 2.3 0.9 4.6 0.9 6.9zm-52.7-0.1c0 2.3 0.3 4.6 0.9 6.9 1.8 6.7 6.2 12.3 12.2 15.8 12.5 7.2 28.5 2.9 35.7-9.6 3.5-6.1 4.4-13.1 2.5-19.8-1.8-6.7-6.2-12.3-12.2-15.8-12.5-7.2-28.5-2.8-35.7 9.7-2.2 3.9-3.4 8.3-3.4 12.8z" />
+              <path d="m67 54.2c0 5.2-1.4 10.3-4.2 14.8-8.2 13.2-25.5 17.2-38.7 9-6.4-4-10.8-10.2-12.5-17.5s-0.5-14.8 3.5-21.2c8.2-13.2 25.5-17.2 38.7-9 6.4 4 10.8 10.2 12.5 17.5 0.5 2.1 0.7 4.3 0.7 6.4zm-55.9-0.1c0 2.1 0.2 4.3 0.7 6.4 1.7 7.2 6.1 13.3 12.4 17.2 13 8.1 30.1 4.1 38.2-8.9 3.9-6.3 5.1-13.7 3.4-20.9s-6.1-13.3-12.4-17.2c-13-8.1-30.1-4.1-38.2 8.9-2.6 4.4-4.1 9.4-4.1 14.5z" />
+              <path d="m71.2 54.2c0 5.8-1.7 11.5-5 16.4-9.1 13.7-27.6 17.4-41.2 8.3-6.6-4.4-11.1-11.1-12.7-18.9s0-15.7 4.4-22.3c9.1-13.6 27.6-17.4 41.2-8.3 6.6 4.4 11.1 11.1 12.7 18.9 0.4 2 0.6 4 0.6 5.9zm-59.1-0.1c0 1.9 0.2 3.9 0.6 5.9 1.5 7.7 6 14.3 12.5 18.6 13.5 9 31.7 5.3 40.7-8.2 4.3-6.5 5.9-14.4 4.3-22-1.5-7.7-6-14.3-12.5-18.6-13.5-9-31.7-5.3-40.7 8.2-3.3 4.8-4.9 10.4-4.9 16.1z" />
+              <path d="m75.4 54.3c0 6.4-2 12.7-5.8 18-10 14.1-29.6 17.5-43.7 7.5-6.9-4.8-11.4-12-12.8-20.3s0.5-16.6 5.3-23.4c9.9-14.1 29.6-17.5 43.7-7.5 6.8 4.8 11.4 12 12.8 20.3 0.3 1.8 0.5 3.6 0.5 5.4zm-62.4-0.2c0 1.8 0.2 3.6 0.5 5.3 1.4 8.2 5.9 15.3 12.7 20.1 14 9.9 33.4 6.5 43.2-7.4 4.8-6.8 6.6-15 5.2-23.1-1.4-8.2-5.9-15.3-12.7-20.1-14-9.9-33.4-6.5-43.2 7.4-3.8 5.3-5.7 11.5-5.7 17.8z" />
+              <path d="m79.6 54.3c0 7.1-2.3 13.9-6.5 19.7-10.9 14.6-31.6 17.7-46.3 6.8-7.1-5.3-11.7-13-13-21.7s0.9-17.4 6.2-24.5c10.9-14.6 31.6-17.7 46.3-6.8 7.1 5.3 11.7 13 13 21.7 0.2 1.5 0.3 3.1 0.3 4.8zm-65.8-0.2c0 1.6 0.1 3.2 0.4 4.8 1.3 8.7 5.8 16.3 12.8 21.5 14.5 10.8 35 7.7 45.7-6.7 5.2-7 7.4-15.6 6.1-24.2s-5.8-16.3-12.8-21.5l0.1-0.1v0.1c-14.5-10.8-35-7.7-45.7 6.7-4.3 5.7-6.6 12.4-6.6 19.4z" />
+              <path d="m83.9 54.3c0 7.7-2.5 15.1-7.4 21.3-11.8 15.1-33.7 17.8-48.8 6-7.3-5.7-12-13.9-13.1-23.1s1.4-18.3 7.1-25.6c11.8-15.1 33.7-17.8 48.8-6 7.3 5.7 12 13.9 13.1 23.1 0.2 1.4 0.3 2.8 0.3 4.3zm-69.2-0.2c0 1.4 0.1 2.9 0.3 4.3 1.1 9.1 5.7 17.2 13 22.9 15 11.7 36.6 9 48.3-6 5.7-7.2 8.1-16.2 7-25.4-1.1-9.1-5.7-17.2-13-22.9-15-11.7-36.6-9-48.3 6-4.8 6.1-7.3 13.5-7.3 21.1z" />
+              <path d="m88.1 54.3c0 8.3-2.8 16.4-8.2 22.9-12.7 15.6-35.7 18-51.3 5.3-7.6-6.1-12.3-14.9-13.3-24.5-1-9.7 1.8-19.2 8-26.7 12.7-15.6 35.7-18 51.3-5.3 7.6 6.1 12.3 14.9 13.3 24.5 0.2 1.2 0.2 2.5 0.2 3.8zm-72.6-0.2c0 1.2 0.1 2.5 0.2 3.8 1 9.6 5.6 18.2 13.1 24.3 15.5 12.5 38.3 10.2 50.9-5.2 6.1-7.5 8.9-16.9 7.9-26.5s-5.6-18.2-13.1-24.3c-15.5-12.6-38.3-10.2-50.9 5.2-5.2 6.5-8.1 14.5-8.1 22.7z" />
+              <path d="m92.4 54.2c0 9-3.1 17.6-9 24.6-13.6 16.1-37.7 18.1-53.8 4.5-7.8-6.6-12.6-15.8-13.4-26-0.9-10.2 2.3-20 8.9-27.8 13.5-16 37.7-18.1 53.8-4.5 7.8 6.6 12.6 15.8 13.4 26 0.1 1.1 0.1 2.2 0.1 3.2zm-76-0.1c0 1.1 0 2.1 0.1 3.2 0.8 10.1 5.6 19.2 13.3 25.7 15.9 13.5 39.8 11.4 53.3-4.5 6.5-7.7 9.7-17.5 8.8-27.6-0.8-9.9-5.6-19.1-13.3-25.6-15.9-13.5-39.8-11.4-53.3 4.5-5.8 6.9-8.9 15.4-8.9 24.3z" />
+              <path d="m96.7 54.2c0 9.7-3.5 18.9-9.9 26.2-14.5 16.6-39.8 18.3-56.3 3.8-8-7-12.8-16.7-13.6-27.4-0.7-10.6 2.8-20.9 9.8-28.9 14.5-16.6 39.8-18.2 56.3-3.8l-0.1 0.1 0.1-0.1c8 7 12.8 16.7 13.6 27.4 0.1 0.9 0.1 1.8 0.1 2.7zm-79.5-0.1c0 0.9 0 1.8 0.1 2.7 0.7 10.6 5.4 20.2 13.4 27.1 16.4 14.4 41.5 12.7 55.8-3.7 7-7.9 10.4-18.1 9.7-28.7-0.7-10.5-5.4-20.1-13.4-27.1-16.4-14.3-41.5-12.7-55.8 3.8-6.4 7.2-9.8 16.4-9.8 25.9z" />
+              <path d="m101 54.2c0 10.3-3.8 20.1-10.7 27.9-15.4 17.1-41.8 18.4-58.9 3-8.3-7.5-13.1-17.7-13.7-28.8s3.2-21.8 10.7-30c15.4-17.1 41.8-18.4 58.9-3 8.3 7.5 13.1 17.7 13.7 28.8v2.1zm-83-0.1c0 0.7 0 1.4 0.1 2.2 0.6 11 5.4 21.1 13.6 28.5 16.9 15.3 43.1 13.9 58.4-3 7.4-8.2 11.2-18.8 10.6-29.8s-5.4-21.1-13.6-28.5c-16.9-15.3-43.1-13.9-58.4 3-7 7.7-10.7 17.4-10.7 27.6z" />
+              <path d="m105.3 54.2c0 11-4.1 21.4-11.6 29.5-16.3 17.5-43.9 18.6-61.4 2.3-8.5-7.9-13.4-18.6-13.8-30.2-0.5-11.6 3.6-22.7 11.5-31.2 16.3-17.5 43.9-18.5 61.4-2.2 8.5 7.9 13.4 18.6 13.8 30.2 0.1 0.5 0.1 1.1 0.1 1.6zm-86.5-0.1v1.6c0.4 11.5 5.3 22.1 13.7 30 17.4 16.2 44.7 15.2 60.9-2.2 7.8-8.4 11.9-19.4 11.5-30.9s-5.3-22.1-13.7-30l0.1-0.1-0.1 0.1c-17.4-16.1-44.7-15.1-60.9 2.3-7.5 8-11.5 18.3-11.5 29.2z" />
+              <path d="m109.6 54.2c0 11.7-4.4 22.7-12.5 31.2-17.2 18-45.9 18.7-63.9 1.5-8.7-8.3-13.7-19.6-14-31.6-0.3-12.1 4.2-23.6 12.5-32.3 17.2-18 45.9-18.7 63.9-1.5 8.7 8.3 13.7 19.6 14 31.6v1.1zm-90 0v1.1c0.3 12 5.2 23.1 13.9 31.4 17.9 17.1 46.3 16.4 63.4-1.5 8.3-8.7 12.7-20 12.4-32s-5.3-23.2-13.9-31.4c-17.9-17.1-46.4-16.4-63.4 1.5-8.1 8.4-12.4 19.3-12.4 30.9z" />
+              <path d="m113.9 54.2c0 12.3-4.7 24-13.4 32.8-18.1 18.5-47.9 18.9-66.4 0.8-9-8.8-14-20.5-14.1-33-0.2-12.5 4.6-24.4 13.4-33.4 18.1-18.6 47.9-18.9 66.4-0.8l-0.1 0.1 0.1-0.1c9 8.8 14 20.5 14.1 33v0.6zm-93.6 0v0.5c0.1 12.4 5.1 24.1 14 32.8 18.4 18 48 17.6 65.9-0.7 8.7-8.9 13.4-20.7 13.3-33.1s-5.1-24.1-14-32.8c-18.4-18-48-17.6-65.9 0.7-8.6 8.8-13.3 20.3-13.3 32.6z" />
+              <path d="m118.3 54.2c0 13-5.1 25.3-14.3 34.5-19 19-50 19-69 0-9.2-9.2-14.3-21.4-14.3-34.5 0-13 5.1-25.3 14.3-34.5 19-19 50-19 69 0l-0.1 0.1 0.1-0.1c9.2 9.2 14.3 21.5 14.3 34.5zm-97.2 0c0 12.9 5 25.1 14.2 34.2 18.9 18.9 49.6 18.9 68.4 0 9.1-9.1 14.2-21.3 14.2-34.2s-5-25.1-14.2-34.2c-18.8-18.9-49.5-18.9-68.4 0-9.2 9.1-14.2 21.3-14.2 34.2z" />
+            </svg>
+          </span>
+          {/* SVG END */}
+          {/* SVG START */}
+          <figure className="position-absolute top-0 start-0 ms-5">
+            <svg className="fill-orange opacity-4" width="29px" height="29px">
+              <path d="M29.004,14.502 C29.004,22.512 22.511,29.004 14.502,29.004 C6.492,29.004 -0.001,22.512 -0.001,14.502 C-0.001,6.492 6.492,-0.001 14.502,-0.001 C22.511,-0.001 29.004,6.492 29.004,14.502 Z" />
+            </svg>
+          </figure>
+          {/* SVG END */}
+          {/* Content START */}
+          <div className="container">
+            {/* Title */}
+            <div className="row align-items-center g-5">
+              {/* Left content START */}
+              <div className="col-lg-5 col-xl-6 position-relative z-index-1 text-center text-lg-start mb-5 mb-sm-0">
+                {/* SVG */}
+                <figure className="fill-warning position-absolute bottom-0 end-0 me-5 d-none d-xl-block">
+                  <svg width="42px" height="42px">
+                    <path d="M21.000,-0.001 L28.424,13.575 L41.999,20.999 L28.424,28.424 L21.000,41.998 L13.575,28.424 L-0.000,20.999 L13.575,13.575 L21.000,-0.001 Z" />
+                  </svg>
+                </figure>
+                {/* SVG */}
+                <figure className="fill-success position-absolute top-0 start-50 translate-middle-x mt-n5 ms-5">
+                  <svg width="22px" height="21px">
+                    <path d="M10.717,4.757 L14.440,-0.001 L14.215,6.023 L20.142,4.757 L16.076,9.228 L21.435,12.046 L15.430,12.873 L17.713,18.457 L12.579,15.252 L10.717,20.988 L8.856,15.252 L3.722,18.457 L6.005,12.873 L-0.000,12.046 L5.359,9.228 L1.292,4.757 L7.220,6.023 L6.995,-0.001 L10.717,4.757 Z" />
+                  </svg>
+                </figure>
+                {/* Title */}
+                <h1 className="mb-0 display-6">
+                  Limitless learning at your
+                  <span className="position-relative">
+                    fingertips
+                    {/* SVG START */}
+                    <span className="position-absolute top-50 start-50 translate-middle ms-3 z-index-n1">
+                      <svg
+                        width="300px"
+                        height="62.1px"
+                        enableBackground="new 0 0 366 62.1"
+                        viewBox="0 0 366 62.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          className="fill-warning"
+                          d="m322.5 25.3c0 1.4 2.9 0.8 3.1 1.6 0.8 1.1-1.1 1.3-0.6 2.4 13.3 0.9 26.9 1.7 40.2 4-2.5 0.7-4.9 1.6-7.3 1.1-4-0.9-8.2-1-12.2-1.2-8.5-0.5-16.9-1.9-25.5-1.7h-3.1c2.6 0.6 4.8 0.4 5.7 2.2-7.3 0.4-14.1-0.8-21.2-1.1-0.2 0.6-0.5 1.2-0.8 1.8 21.3 0.7 42.5 1.6 64.3 4.6-4.2 1.6-7.7 1-10.8 0.8-6.8-0.5-13.5-1.3-20.3-1.9-0.9-0.1-2.3-0.1-2.9 0.2-2.2 1.6-4.3 0.6-7 0.4 1.4-1 2.5 0.5 3.9-0.8-5.6-1-10.7 0.6-15.9 0s-10.5-0.6-16.6-0.8c2 1.6 4.6 1.3 6.2 1.4 4.9 0 9.9 0.8 14.8 0.7 5.3-0.1 10.4 0.5 15.5 0.9 3.2 0.3 6.7-0.1 9.9-0.4 1.1-0.1 0.5 0.3 0.6 0.6 0.5 0.9 2.2 0.8 3.6 0.8 5.1-0.1 10.1 0.6 14.8 1.5 0.8 0.1 1.5 0 1.7 0.7 0 0.7-0.8 0.6-1.5 0.8-3.9 1.2-7.4-0.2-11.1-0.2-2 0-4.3-1.5-6 0.5-0.3 0.4-1.4 0.1-2.2-0.1-4.5-0.8-9.1-0.5-13.8-1.5-2.3-0.5-5.6 0.1-8.4 0.5-4 0.5-8-0.7-12.1-0.9-3.4-0.2-7.1-0.5-10.5-0.7-7.1-0.3-14.2-1.2-22.3-0.4 4.9 1.1 9.4 1.2 13.8 1.2 9.7 0 19.2 2.3 28.9 1.6 7.3 3.2 15.9 1.5 23.8 2.9 4.9 0.8 10.1 0.8 15.2 1.2 0.5 0 0.8 0.3 1.1 0.9-20-2.1-40.2-1.4-60.8-3 4.9 2.1 10.8-0.3 15.3 2.7-8 1.9-15.8-0.9-23.5-0.1 2.8 1.4 7.1 1.1 9.3 3.3 0.5 0.5 0.2 1.1-1.2 1.3 2.3 1 3.4-2.1 5.7-0.4 0.2-0.6 0.2-1 0.3-1.5 0.8-0.3 2 0.8 1.5 1.5-0.2 0.1 0 0.3 0 0.5 18.7 0.4 37.3 1.7 56.2 3.6-1.7 1.1-2.8 1.2-4.2 1.1-7.1-0.5-14.1-0.9-21.2-1.4-3.1-0.2-6.3-0.4-9.4-0.4-7.6-0.2-15-0.7-22.4-1-9-0.4-17.9-0.1-26.9-0.1-1.2 0-2.9-0.4-3.9 1 14.8 0.3 29.7 0.6 44.4 1.1 14.8 0.6 29.9 1.3 44.2 4.2-4.3 1-8.8 0.9-13 0.5-5.3-0.5-10.5-1.1-15.8-1.2-11.4-0.3-22.9-0.9-34.3-1.2-17.6-0.4-35.4-0.3-53.1-0.4-10.8-0.1-21.7-0.2-32.5 0-17.8 0.4-35.7 0.2-53.5 0.5-13.1 0.3-26.3 0.1-39.4 0.5-11.1 0.3-22.4 0.6-33.6 1-13.1 0.6-26.1 0.2-39.3 0.4-3.9 0.1-7.6 0.2-11.8-0.2 0.9-1.2 2.3-1.3 3.9-1.3 8.4 0.2 16.6-0.4 24.9-0.9 3.9-0.2 7.9-0.4 11.9 0.2 2.5 0.4 5.3-0.3 8-0.4 7.3-0.4 14.7-0.7 22-0.9 11.9-0.5 23.7-1.2 35.6-0.8 7.7 0.2 15.3-0.6 22.9-0.1 2.3 0.2 4.3-0.5 6.5-1h-17.6c-9.6 0-19-0.1-28.6 0-8 0.1-16.1 0.3-24 0.8-2.6 0.2-5.4 0.1-8.2 0.1-10.1 0.3-20.1 0.6-30.2 0.5-5.4 0-10.7-0.1-15.9 0.6-2.3 0.3-4-1.3-6.5-0.6 0.2 0.4 0.5 0.9 0.6 1.5-1.9 0-4 0.4-4.9-0.1-4.2-2.2-9.4-1.5-14.1-2.3-1.7-0.3-3.7-0.1-4.3-1.5-0.5-1.3 1.9-1.5 2.6-2.6-4.2-1.4-4.6-5-8.5-7.2-1.5 0.2-0.9 2.8-4.2 1.3 0.3 2.4 4.5 3.9 2.8 6.4-2.3 0.3-3.2-0.8-4.2-1.7-2.5-4-5.1-8.4-5.1-12.7 0.2-6.8 0.2-13.8 3.6-20.4 0.3-0.5 0.3-1 0.8-1.4 0.9-0.9 1.2-2.4 3.6-2.1 2.2 0.2 2.5 1.5 2.6 2.6 0.2 1.4 1.5 1.8 3.2 2.5 0.9-1.4 0.5-2.9 2.6-3.7 0.2-0.1 0.3-0.4 0.3-0.4-3.1-2.2 1.2-2.2 2.3-3.3-3.1-1.8-4-4.3-3.7-7-1.5-0.3-3.1-0.4-4.5 0-1.7 0.6-2.2-0.5-2.9-1 0.6-0.5 0.8-1.1 2.2-1.3 7.6-0.9 15.2-1.7 22.9-2 20-0.7 39.9-0.9 59.9-1 11.9-0.1 23.8 0.4 35.6 1.1 3.6 0.2 7.1-0.9 10.7-0.5 7.9 0.9 15.8 0.3 23.8 0.5 7.3 0.1 14.4-0.6 21.7-0.1 12.2 0.9 24.4 0.3 36.7 0.6 9.4 0.3 18.9 0.4 28.2 1 11.9 0.7 23.8 1.3 35.6 2 11.1 0.6 22.4 0.5 33.3 2 7.1 1 14.4 1.1 21.3 2.4 4 0.7 8.2 1.6 12.4 1.9 2.2 0.2 0.9 1 1.5 1.5-4-0.8-8-0.8-12.1-1.4-4.3-0.7-8.5-1-12.8 0.4-2.9 1-6.3 0.2-9.3-0.1-10.2-1.1-20.6-1.6-30.8-2.4-12.1-0.9-24.3-1.4-36.4-2.1-9.9-0.6-20-0.5-29.9-1-11.4-0.6-22.7 0-34.2-0.5-6.3-0.3-12.3-0.3-18.5-0.4-4.2-0.1-8.4 1.3-12.8 0.3 0.6 0.2 1.2 0.7 1.9 0.7 10.5 0 20.9 1.9 31.6 1.7 6.5-0.1 13.1 0.2 19.8 0.8 3.2 0.3 6.3-0.4 9.7-0.1 7.6 0.7 15.5 0.5 23 0.8 12.4 0.5 24.7 0.4 37.1 1.1 13.3 0.7 26.8 2.1 39.9 4.1 6.2 0.9 12.7 1.5 19.2 1.7 0.6 0 1.1 0.1 1.5 0.5-4.6 0.1-9.3 0-13.9-0.5-0.6 1.1 1.4 0.9 1.5 1.9-9.7 1.6-19.6-1.4-29.4-0.1 2.2 1.4 5.1 1 7.4 1 7.3 0.1 14.1 1.3 21.2 1.9 2.8 0.3 5.9 0 8.5 0.8 1.5 0.5 4.6-1.1 4.9 1.3 4-0.7 7.3 1.5 11.1 1.2 4-0.3 7.7 0.6 11.6 1.1 0.8 0.1 2.2 0.3 2.3 1.1 0.2 1-1.1 1.2-2 1.5-3.4 1-6.7-0.4-10.1-0.4-0.9 0-2-0.2-2.9-0.2-9.4 0.1-18.8-1.3-28.3-1.8-6-0.4-12.1-0.9-18.1-1.3 0 0.2 0 0.4-0.2 0.6 6.1 0.5 12.1 1.4 18.3 0.7z"
+                        />
+                      </svg>
+                    </span>
+                    {/* SVG END */}
+                  </span>
+                </h1>
+                {/* Content */}
+                <p className="my-4 lead">
+                  Online learning and teaching marketplace with 5K+ courses
+                  &amp; 10M students. Taught by experts to help you acquire new
+                  skills.
+                </p>
+                {/* Info */}
+                <ul className="list-inline position-relative justify-content-center justify-content-lg-start mb-4">
+                  <li className="list-inline-item me-2">
+                    {" "}
+                    <i className="bi bi-patch-check-fill h6 me-1" />
+                    Learn with experts
+                  </li>
+                  <li className="list-inline-item me-2">
+                    {" "}
+                    <i className="bi bi-patch-check-fill h6 me-1" />
+                    Get certificate
+                  </li>
+                  <li className="list-inline-item">
+                    {" "}
+                    <i className="bi bi-patch-check-fill h6 me-1" />
+                    Get membership
+                  </li>
+                </ul>
+                <div className="d-sm-flex align-items-center justify-content-center justify-content-lg-start">
+                  {/* Button */}
+                  <a
+                    href="#"
+                    className="btn btn-lg btn-danger-soft me-2 mb-4 mb-sm-0"
+                  >
+                    Get Started
+                  </a>
+                  {/* Video button */}
+                  <a
+                    data-glightbox=""
+                    data-gallery="office-tour"
+                    href="https://www.youtube.com/embed/tXHviS-4ygo"
+                    className="ms-0 ms-sm-4 d-block"
+                  >
+                    <div className="btn btn-round btn-primary-shadow mb-0 me-3 align-middle d-inline-block">
+                      {" "}
+                      <i className="fas fa-play" />
+                    </div>
+                    <div className="align-middle d-inline-block">
+                      <h6 className="mb-0 fw-normal">Watch video</h6>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              {/* Left content END */}
+              {/* Right content START */}
+              <div className="col-lg-7 col-xl-6 text-center position-relative">
+                {/* SVG decoration */}
+                <figure className="position-absolute bottom-0 start-50 translate-middle-x mt-4 mb-0">
+                  <svg
+                    width="550px"
+                    height="538px"
+                    viewBox="0 0 554 544"
+                    style={{ enableBackground: "new 0 0 554 544" }}
+                    xmlSpace="preserve"
+                  >
+                    <path
+                      className="fill-primary"
+                      d="M423.3,77.2c49.5,32.5,100.4,67.2,118.4,114.5s3.5,107.1-15.4,165.7c-18.7,58.6-41.8,116.1-84,148.6 c-42.5,32.8-104.2,40.2-163.8,37.3c-59.5-3.2-116.8-17.1-164.7-47.9c-48.3-30.6-87.2-78.2-102-131.6C-3,310.5,6.6,251,25.3,194.7 C43.6,138,70.7,84.3,114.1,49.5C157.2,14.8,216.7-1,270.8,6.4C324.8,14.2,373.4,44.7,423.3,77.2z"
+                    />
+                  </svg>
+                </figure>
+                {/* SVG decoration */}
+                <figure className="position-absolute bottom-0 start-50 translate-middle-x mb-n5 z-index-9">
+                  <svg width="686px" height="298px">
+                    <path
+                      className="fill-body"
+                      d="M60.971,0.000 L-0.000,0.000 C-0.000,0.000 80.068,266.854 184.934,294.154 C184.934,294.154 568.841,306.828 588.786,286.150 C588.786,286.150 698.888,112.106 684.750,0.000 L611.777,0.000 C611.777,0.000 569.027,161.864 505.816,209.110 C505.816,209.110 394.427,296.341 195.930,203.102 C195.930,203.102 66.072,143.180 60.971,0.000 Z"
+                    />
+                  </svg>
+                </figure>
+                {/* SVG decoration */}
+                <figure className="position-absolute top-50 start-50 translate-middle mt-n7">
+                  <svg className="fill-warning">
+                    <path d="m22.3 57.6v0.1c-0.1 0.3 0.1 0.6 0.3 0.7 0.3 0.2 0.7 0.2 1 0.2h1.4c1.3 0.1 2.6 0.1 3.9 0.1 1.2 0 2.4 0 3.7 0.2s2.6 0.1 3.9 0.2c0.8 0.1 0.8-1.2 0-1.3-1.2-0.1-2.5 0-3.7-0.2-1.2-0.1-2.3-0.2-3.4-0.2-1.2 0-2.4 0-3.6-0.1-0.6 0-1.1-0.1-1.7-0.1-0.2 0-0.7 0.1-0.8 0 0.1 0.2 0.2 0.5 0.3 0.7v-0.1c0.2-0.7-1.1-1-1.3-0.2z" />
+                    <path d="m23.3 57.6c-0.1-0.5-0.2-0.8-0.1-1.3v-1.2-2.9c0-0.4-0.1-0.7-0.2-1.1 0-0.4 0-0.8-0.1-1.1-0.1-0.2-0.3-0.4-0.5-0.6-0.4-0.3-0.7-0.5-1-0.9-1.2-1.3-2.7-2.3-3.8-3.7s-1.8-2.9-2.2-4.6c-0.1-0.5-0.2-1-0.3-1.4s-0.2-0.8-0.2-1.3c0-0.8 0-1.7-0.1-2.5-0.1-0.7-0.3-1.5-0.2-2.3s0.5-1.8 0.9-2.5c0.8-1.5 1.5-3.1 2.6-4.4 0.5-0.6 0.9-1.3 1.5-1.8 0.6-0.6 1.3-1.2 1.9-1.8 0.7-0.5 1.4-1.1 2.2-1.5 0.7-0.3 1.4-0.4 2.1-0.6 0.7-0.1 1.3-0.2 2-0.4 0.9-0.3 1.7-0.6 2.7-0.8 0.9-0.2 1.8-0.1 2.8-0.1 1 0.1 2 0.1 2.9 0.4 0.8 0.2 1.6 0.3 2.3 0.6 0.8 0.3 1.5 0.8 2.2 1.4 1.4 1.2 2.7 2.6 3.8 4.1 0.5 0.7 1.1 1.5 1.5 2.2 0.4 0.8 0.8 1.7 1.2 2.5 0.7 1.7 0.7 3.6 0.7 5.5 0 0.9-0.1 1.8-0.3 2.6l-0.6 2.7c-0.5 1.8-1.7 3.5-3 4.9-0.6 0.7-1.5 1.3-2.3 1.8-0.4 0.3-0.9 0.5-1.3 0.7s-0.7 0.4-1.1 0.6c-0.7 0.2-1.7 0.3-2 1-0.1 0.4-0.1 0.7-0.1 1.1 0 0.5-0.1 1-0.2 1.4-0.1 0.9-0.2 1.9-0.3 2.8-0.1 0.5 0 1 0 1.5 0 0.3 0 0.9-0.1 1.2-0.4 0.7 0.7 1.4 1.1 0.7 0.3-0.5 0.3-1.4 0.3-2.1 0-1 0.1-1.9 0.2-2.9 0.1-0.9 0.3-1.8 0.3-2.7v-0.5c0-0.2-0.1-0.1 0.2-0.1 0.4 0 0.9-0.3 1.3-0.4 1.6-0.7 3.1-1.7 4.4-2.8 0.6-0.5 1.1-1.3 1.7-1.9 0.6-0.7 1-1.6 1.5-2.4 0.4-0.7 0.6-1.5 0.8-2.3 0.2-1 0.5-2 0.7-2.9 0.3-2 0.2-4-0.1-5.9-0.1-0.9-0.4-1.6-0.7-2.4-0.4-0.9-0.8-1.9-1.3-2.7-1-1.7-2.2-3.3-3.6-4.6-1.2-1.2-2.4-2.4-4-3.1-0.8-0.3-1.6-0.4-2.4-0.7-1-0.3-1.9-0.4-3-0.5-1-0.1-2-0.2-3 0-1 0.1-2 0.5-2.9 0.8-1.5 0.5-3 0.5-4.5 1.1-1.6 0.7-2.9 1.9-4.1 3-0.3 0.3-0.6 0.5-0.9 0.8s-0.5 0.7-0.7 1c-0.3 0.4-0.6 0.7-0.9 1-0.3 0.4-0.6 0.8-0.8 1.2-0.5 0.8-0.8 1.6-1.3 2.5-0.4 0.8-0.8 1.6-1.1 2.5-0.2 0.8-0.4 1.5-0.3 2.4s0.2 1.8 0.2 2.7c0 2 0.6 4 1.2 5.9 0.7 1.9 2 3.6 3.5 5 0.8 0.7 1.6 1.4 2.3 2.2l0.5 0.5c0.2 0.1 0.4 0.2 0.5 0.4 0.2 0.2 0.2 0.9 0.2 1.2 0.2 1.1 0.1 2.3 0.1 3.4v1.4c0 0.5 0.1 0.9 0.2 1.4 0.1 0.7 1.3 0.4 1.1-0.4z" />
+                    <path d="m27.1 56.7c0.1 0 0.1 0 0 0 0.4 0 0.7 0.1 1 0.1-0.2-0.4-0.1-1.1 0-1.5 0-0.8 0.1-1.7 0.1-2.5 0-1.6 0-3.2-0.1-4.8-0.2-3.1-0.1-6.3-0.5-9.4-0.1-0.7-0.2-1.3-0.4-2-0.1-0.7-0.2-1.3-0.6-1.9-0.7-0.9-1.9-1-2.9-0.6-1.1 0.5-1.8 1.4-1.6 2.7 0.1 0.6 0.2 1.2 0.6 1.7s0.9 1 1.4 1.4c2.1 1.7 5 2.5 7.7 2 1.4-0.3 2.8-0.8 4.2-1.3 1.3-0.5 2.3-1.2 3.2-2.2 0.7-0.8 1.3-2.3 1.1-3.3-0.3-1.1-1.5-1.8-2.6-1.9-1.3-0.1-2.3 0.4-3.1 1.3-0.9 1.1-1.3 2.3-1.7 3.6-0.4 1.6-0.3 3.3-0.3 4.9-0.1 1.7-0.1 3.4-0.1 5.1-0.1 1.8-0.2 3.5-0.4 5.3-0.1 0.9-0.1 1.7-0.1 2.6 0 0.7-0.1 1.5 0.1 2.2 0.2 0.8 1.5 0.5 1.3-0.3-0.1-0.4-0.1-1-0.1-1.5 0-0.6 0-1.3 0.1-1.9l0.3-3.9c0.2-2.5 0.2-5 0.3-7.5 0-1.2 0-2.5 0.1-3.7 0.1-0.6 0.3-1.2 0.5-1.8s0.3-1.1 0.6-1.5c0.6-0.9 1.3-1.6 2.4-1.5 0.5 0 1 0.2 1.3 0.5 0.4 0.5 0.2 1.1 0 1.6-0.3 1-1.3 1.9-2.2 2.4-1 0.5-2.2 0.8-3.2 1.1-1.3 0.4-2.5 0.8-3.8 0.6-1.1-0.1-2.3-0.5-3.3-1-0.4-0.2-0.9-0.5-1.3-0.8s-0.9-0.7-1.2-1.2c-0.2-0.4-0.4-1.1-0.3-1.6 0.2-0.5 0.7-0.8 1.2-0.9 1.3-0.3 1.3 1.2 1.5 2.1 0.3 1.3 0.4 2.5 0.4 3.8 0.2 2.9 0.3 5.8 0.4 8.7 0.1 1.5 0 2.9-0.1 4.4 0 0.9-0.4 2.4 0.2 3.3 0.2 0.3 0.6 0.4 0.9 0.2 0.2-0.1 0.3-0.2 0.4-0.4 0.1-0.7-1-1.4-1.4-0.7z" />
+                    <path d="m17.2 44.3c-0.4-0.3-0.4-0.9-0.7-1.2-0.4-0.5-0.8-1.1-1.1-1.7-0.6-1.2-0.9-2.6-1.1-4-0.1-0.6-0.3-1.2-0.3-1.8v-2.1c0-0.4-0.1-0.7-0.1-1.1 0-0.3 0.1-0.7 0.2-1 0.1-0.7 0.4-1.4 0.7-2.1 0.6-1.3 1.5-2.5 2.3-3.6 0.8-1 1.7-2 2.6-3s2.3-1.7 3.5-2.3c0.7-0.3 1.3-0.6 2-0.8 0.6-0.2 1.3-0.2 1.9-0.4 0.7-0.2 1.4-0.2 2.1-0.2 0.3 0 0.6-0.1 0.8-0.1 0.4-0.1 0.9 0 1.3 0 1.4 0 2.8 0.1 4.2 0.7 0.6 0.2 1.3 0.4 1.8 0.7 0.6 0.3 1.2 0.6 1.8 0.8 1 0.5 2 1.4 2.8 2.1 1 0.9 1.7 1.9 2.4 3 0.6 1 1.6 1.9 1.9 3 0.2 0.7 0.5 1.3 0.6 2.1 0.1 0.7 0 1.5 0 2.2 0 1.5 0 2.9-0.1 4.4-0.1 0.9-0.2 1.7-0.3 2.6-0.1 0.4-0.1 0.8-0.1 1.2s-0.2 0.7-0.3 1c0 1.3-1 2.6-2.1 3.6-0.5 0.4-1 0.8-1.6 1.1-0.6 0.2-1.2 0.6-1.8 0.9s-1.3 0.5-1.9 0.8-1 0.4-1.3 1c-0.3 0.8 0.9 1.1 1.3 0.3-0.1 0.2 0.1 0.1 0.2 0 0.1 0 0.2-0.1 0.3-0.2 0.3-0.1 0.6-0.2 0.9-0.4 0.6-0.3 1.3-0.5 1.9-0.8 0.5-0.3 1.1-0.5 1.6-0.9 0.6-0.4 1.1-0.7 1.6-1.2 1-0.9 1.9-2.2 2.4-3.4 0.2-0.6 0.5-1.2 0.6-1.8l0.3-2.4c0.2-1.6 0.3-3.3 0.3-4.9s0.1-3.1-0.4-4.7c-0.2-0.6-0.4-1.2-0.7-1.7-0.3-0.6-0.7-1.1-1.1-1.6-0.9-1.1-1.5-2.4-2.5-3.4-1.9-1.9-4-3.5-6.6-4.3-0.7-0.2-1.3-0.5-1.9-0.7-0.8-0.2-1.5-0.4-2.4-0.4-0.8 0-1.5-0.1-2.3-0.1-0.7 0-1.5 0.2-2.3 0.2-0.7 0.1-1.4 0.3-2.1 0.4-0.8 0.1-1.4 0.3-2.2 0.5-1.4 0.5-2.8 1.3-4.1 2.1-0.6 0.4-1 0.8-1.5 1.3-0.5 0.6-1 1.1-1.5 1.6-1 1.1-1.9 2.3-2.7 3.6-0.9 1.4-1.4 3-1.6 4.6-0.1 0.8 0 1.7 0.1 2.6 0 0.7-0.1 1.4 0 2.2 0.2 0.8 0.3 1.6 0.4 2.4 0.2 0.8 0.5 1.7 0.8 2.5 0.3 0.7 0.7 1.4 1.2 2 0.2 0.3 0.3 0.5 0.5 0.9 0.1 0.3 0.3 0.6 0.5 0.8 0.7 0.5 1.6-0.4 0.9-0.9z" />
+                    <path d="m22.8 62.6c1.1-0.4 2.2-0.4 3.4-0.5 1.1-0.1 2.2-0.1 3.3-0.1s2.2 0.1 3.2 0.3c1.1 0.2 2.2 0.5 3.3 0.4-0.2-0.4-0.3-0.7-0.5-1.1-0.2 0.3-0.7 0.3-1 0.5-0.6 0.2-1.1 0.4-1.7 0.5-1.2 0.4-2.5 0.7-3.7 1.1s-2.4 0.7-3.6 1.1c-0.6 0.2-1.2 0.3-1.8 0.5s-1.3 0.5-1.8 0.5c0.1 0.4 0.1 0.9 0.2 1.3 1.1-0.4 2.3-0.4 3.4-0.4 1.2-0.1 2.4-0.1 3.6-0.1s2.4 0.2 3.6 0.6c0.9 0.3 2.1 0.8 2.9 0.3 0.7-0.4 0.1-1.6-0.7-1.1-0.4 0.2-1.2-0.2-1.6-0.3-0.6-0.2-1.1-0.4-1.7-0.5-1.1-0.2-2.2-0.3-3.3-0.3s-2.3 0.1-3.4 0.1c-1.1 0.1-2.2 0.1-3.3 0.5-0.7 0.2-0.6 1.3 0.2 1.3 0.6 0 1.2-0.2 1.8-0.4s1.2-0.4 1.9-0.5c1.4-0.4 2.7-0.8 4.1-1.2 1.3-0.4 2.6-0.8 4-1.2 0.5-0.2 1.1-0.4 1.6-0.5 0.4-0.1 0.9-0.3 1.2-0.6 0.3-0.4 0.2-1.2-0.5-1.1-1.1 0.1-2.3-0.3-3.4-0.5s-2.2-0.3-3.4-0.3-2.4 0.1-3.6 0.2c-1.1 0.1-2.2 0.2-3.2 0.5-0.7 0-0.3 1.3 0.5 1z" />
+                    <path d="m22.8 57.6c-0.1-0.3-0.1-0.7-0.2-1s-0.1-0.7-0.1-1 0.1-0.7 0.1-1-0.1-0.7-0.1-1v-1c0-0.3-0.1-0.7-0.1-1v-1c0-0.1 0-0.3-0.1-0.4v-0.2 0c-0.4 0.1-0.8 0.1-1.2 0.2 0 0 0 0.1 0.1 0.1 0.4 0.7 1.5 0.1 1.1-0.7 0 0 0-0.1-0.1-0.1-0.3-0.5-1-0.3-1.2 0.2-0.1 0.3 0 0.5 0.1 0.8s0 0.6 0 1 0.1 0.7 0.1 1.1c0 0.3-0.1 0.7 0 1 0 0.3 0.1 0.7 0.1 1 0 0.4 0 0.8-0.1 1.2 0 0.4 0 0.7 0.1 1.1s0.1 0.8 0.2 1.1c0.3 0.8 1.6 0.4 1.3-0.4z" />
+                    <path d="m19.5 21.6c-1.6 1.9-3.2 3.9-4.4 6.1-1.1 2.2-1.8 4.6-2.1 7-0.3 2.5 0.3 4.9 1.2 7.3 0.9 2.3 2.4 4.1 4.3 5.5 0.7 0.5 1.3-0.6 0.7-1.1-0.9-0.7-1.7-1.4-2.4-2.3s-1.1-2-1.5-3.1c-0.8-2.1-1.1-4.3-0.8-6.5s1-4.4 2-6.3c1.1-2.1 2.6-3.9 4.1-5.7 0.3-0.6-0.6-1.5-1.1-0.9z" />
+                    <path d="m29.1 4.1c-0.1 0.5-0.1 1-0.1 1.4v1.4c0 1-0.1 2-0.2 3 0 0.3 0.3 0.6 0.6 0.6 0.4 0 0.6-0.3 0.6-0.6 0.1-1 0.2-1.9 0.2-2.9v-1.4c0-0.4 0-0.8 0.1-1.2 0.3-0.7-0.9-1.1-1.2-0.3z" />
+                    <path d="m2.2 15c0.5 0.2 1 0.6 1.4 1 0.5 0.4 1.1 0.8 1.6 1.2 1.2 0.8 2.4 1.7 3.5 2.6 0.3 0.2 0.7 0.3 0.9 0 0.2-0.2 0.3-0.7 0-0.9-1.2-1-2.5-1.9-3.8-2.8-0.6-0.4-1.1-0.8-1.6-1.2-0.5-0.5-1.1-0.9-1.7-1.1-0.3-0.1-0.7 0.1-0.8 0.5-0.1 0.2 0.1 0.5 0.5 0.7z" />
+                    <path d="m50.1 21.3c2.3-1.7 4.6-3.5 6.7-5.4 0.6-0.6-0.3-1.5-0.9-0.9-2.1 1.8-4.2 3.6-6.5 5.2-0.3 0.2-0.4 0.6-0.2 0.9 0.2 0.2 0.6 0.4 0.9 0.2z" />
+                    <path d="m30.3 2.6v-0.1c-0.4-0.1-0.9-0.1-1.3-0.2 0.1 1.5 0.2 2.9 0.1 4.4 0 1.5-0.1 2.9-0.1 4.4 0 0.8 1.3 0.8 1.3 0 0-1.5 0.1-2.9 0.2-4.4s0-2.9-0.1-4.4c-0.1-0.7-1.1-0.9-1.3-0.2v0.1c-0.3 0.9 1 1.2 1.2 0.4z" />
+                    <path d="m1.1 14.2c0 0.6 0.6 1.1 1.1 1.4s1.1 0.5 1.7 0.7h0.1c0.1 0-0.1-0.1 0 0 0.2 0.1 0.5 0.2 0.7 0.3 0.5 0.2 0.9 0.5 1.4 0.7 0.9 0.5 1.7 1 2.5 1.6 0.3 0.2 0.7 0.3 0.9 0 0.2-0.2 0.3-0.7 0-0.9-1.5-1.1-3.2-2-4.9-2.8-0.4-0.2-0.9-0.3-1.2-0.5-0.3-0.1-0.5-0.2-0.7-0.4l-0.2-0.2c0.1 0 0 0 0 0.1v0c0-0.8-1.3-0.8-1.4 0z" />
+                    <path d="m52.1 19.7 0.3-0.3c-0.1 0 0 0 0 0 0.1-0.1 0.3-0.2 0.4-0.3l0.9-0.6c0.6-0.4 1.2-0.8 1.8-1.1 0.3-0.2 0.4-0.6 0.2-0.9s-0.6-0.4-0.9-0.2c-1.3 0.7-2.6 1.5-3.7 2.5-0.3 0.2-0.2 0.7 0 0.9 0.4 0.3 0.7 0.3 1 0z" />
+                    <path d="m20.2 49.3c-0.1 0 0 0 0 0 0.1 0.2 0.1 0.3 0.1 0.4 0.1 0.3 0.2 0.6 0.4 0.9 0.3 0.7 0.5 1.5 0.7 2.3s0.2 1.7 0.3 2.5c0.1 0.7 0.1 1.6 0.5 2.2 0.4 0.7 1.6 0.1 1.1-0.7-0.2-0.3-0.2-0.6-0.2-1 0-0.5-0.1-0.9-0.1-1.4-0.1-0.9-0.2-1.8-0.4-2.7-0.2-0.8-0.5-1.5-0.8-2.3-0.2-0.5-0.3-1.2-0.8-1.4-0.3-0.1-0.7-0.1-0.9 0.2-0.3 0.4-0.3 0.9 0.1 1z" />
+                  </svg>
+                </figure>
+                {/* Icon logos START */}
+                <div className="p-2 bg-white shadow rounded-3 position-absolute top-50 start-0 translate-middle-y mt-n7 d-none d-sm-block">
+                  <img src={science} alt="Icon" />
+                </div>
+                <div className="p-2 bg-white shadow rounded-3 position-absolute top-0 end-0 me-5">
+                  <img src={angular} alt="Icon" />
+                </div>
+                <div className="p-2 bg-white shadow rounded-3 position-absolute top-50 end-0 translate-middle-y mt-5 ms-5 d-none d-lg-block z-index-9">
+                  <img src={figma} alt="Icon" />
+                </div>
+                {/* Icon logos END */}
+                {/* Congratulations message */}
+                <div className="p-3 bg-blur border border-light shadow rounded-4 position-absolute bottom-0 start-0 z-index-9 d-none d-xl-block mb-5 ms-5">
+                  <div className="d-flex justify-content-between align-items-center">
+                    {/* Icon */}
+                    <span className="icon-lg bg-warning rounded-circle">
+                      <i className="fas fa-envelope text-white" />
+                    </span>
+                    {/* Info */}
+                    <div className="text-start ms-3">
+                      <h6 className="mb-0 text-white">
+                        Congratulations{" "}
+                        <span className="ms-4">
+                          <i className="fas fa-check-circle text-success" />
+                        </span>
+                      </h6>
+                      <p className="mb-0 small text-white">
+                        Your admission completed
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                {/* Active student */}
+                <div
+                  className="p-3 bg-success d-inline-block rounded-4 shadow-lg position-absolute top-50 end-0 translate-middle-y mt-n7 z-index-1 d-none d-md-block"
+                  style={{
+                    background:
+                      "url(@/assets/images/pattern/01.png) no-repeat center center",
+                    backgroundSize: "cover",
+                  }}
+                >
+                  <p className="text-white">Our daily new students</p>
+                  {/* Avatar group */}
+                  <ul className="avatar-group mb-0">
+                    <li className="avatar avatar-sm">
+                      <img
+                        className="avatar-img rounded-circle border-white"
+                        src="@/assets/images/avatar/01.jpg"
+                        alt="avatar"
+                      />
+                    </li>
+                    <li className="avatar avatar-sm">
+                      <img
+                        className="avatar-img rounded-circle border-white"
+                        src="@/assets/images/avatar/02.jpg"
+                        alt="avatar"
+                      />
+                    </li>
+                    <li className="avatar avatar-sm">
+                      <img
+                        className="avatar-img rounded-circle border-white"
+                        src="@/assets/images/avatar/03.jpg"
+                        alt="avatar"
+                      />
+                    </li>
+                    <li className="avatar avatar-sm">
+                      <img
+                        className="avatar-img rounded-circle border-white"
+                        src="@/assets/images/avatar/04.jpg"
+                        alt="avatar"
+                      />
+                    </li>
+                    <li className="avatar avatar-sm">
+                      <div className="avatar-img rounded-circle border-white bg-primary">
+                        <span className="text-white position-absolute top-50 start-50 translate-middle small">
+                          1K+
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                {/* Image */}
+                <div className="position-relative">
+                  <img src="@/assets/images/element/07.png" alt="" />
+                </div>
+              </div>
+              {/* Right content END */}
+            </div>
+          </div>
+          {/* Content END */}
+        </section>
+        {/* =======================
+Main Banner END */}
+        {/* =======================
+Counter START */}
+        <section className="py-0 py-xl-5">
+          <div className="container">
+            <div className="row g-4">
+              {/* Counter item */}
+              <div className="col-sm-6 col-xl-3">
+                <div className="d-flex justify-content-center align-items-center p-4 bg-warning bg-opacity-15 rounded-3">
+                  <span className="display-6 lh-1 text-warning mb-0">
+                    <i className="fas fa-tv" />
+                  </span>
+                  <div className="ms-4 h6 fw-normal">
+                    <div className="d-flex">
+                      <h5
+                        className="purecounter mb-0 fw-bold"
+                        data-purecounter-start={0}
+                        data-purecounter-end={10}
+                        data-purecounter-delay={200}
+                      >
+                        0
+                      </h5>
+                      <span className="mb-0 h5">K</span>
+                    </div>
+                    <p className="mb-0">Online Courses</p>
+                  </div>
+                </div>
+              </div>
+              {/* Counter item */}
+              <div className="col-sm-6 col-xl-3">
+                <div className="d-flex justify-content-center align-items-center p-4 bg-blue bg-opacity-10 rounded-3">
+                  <span className="display-6 lh-1 text-blue mb-0">
+                    <i className="fas fa-user-tie" />
+                  </span>
+                  <div className="ms-4 h6 fw-normal">
+                    <div className="d-flex">
+                      <h5
+                        className="purecounter mb-0 fw-bold"
+                        data-purecounter-start={0}
+                        data-purecounter-end={200}
+                        data-purecounter-delay={200}
+                      >
+                        0
+                      </h5>
+                      <span className="mb-0 h5">+</span>
+                    </div>
+                    <p className="mb-0">Expert Tutors</p>
+                  </div>
+                </div>
+              </div>
+              {/* Counter item */}
+              <div className="col-sm-6 col-xl-3">
+                <div className="d-flex justify-content-center align-items-center p-4 bg-purple bg-opacity-10 rounded-3">
+                  <span className="display-6 lh-1 text-purple mb-0">
+                    <i className="fas fa-user-graduate" />
+                  </span>
+                  <div className="ms-4 h6 fw-normal">
+                    <div className="d-flex">
+                      <h5
+                        className="purecounter mb-0 fw-bold"
+                        data-purecounter-start={0}
+                        data-purecounter-end={60}
+                        data-purecounter-delay={200}
+                      >
+                        0
+                      </h5>
+                      <span className="mb-0 h5">K+</span>
+                    </div>
+                    <p className="mb-0">Online Students</p>
+                  </div>
+                </div>
+              </div>
+              {/* Counter item */}
+              <div className="col-sm-6 col-xl-3">
+                <div className="d-flex justify-content-center align-items-center p-4 bg-info bg-opacity-10 rounded-3">
+                  <span className="display-6 lh-1 text-info mb-0">
+                    <i className="bi bi-patch-check-fill" />
+                  </span>
+                  <div className="ms-4 h6 fw-normal">
+                    <div className="d-flex">
+                      <h5
+                        className="purecounter mb-0 fw-bold"
+                        data-purecounter-start={0}
+                        data-purecounter-end={6}
+                        data-purecounter-delay={300}
+                      >
+                        0
+                      </h5>
+                      <span className="mb-0 h5">K+</span>
+                    </div>
+                    <p className="mb-0">Certified Courses</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* =======================
+Counter END */}
+        {/* =======================
+Popular course START */}
+        <section>
+          <div className="container">
+            {/* Title */}
+            <div className="row mb-4">
+              <div className="col-lg-8 mx-auto text-center">
+                <h2 className="fs-1">Most Popular Courses</h2>
+                <p className="mb-0">
+                  Choose from hundreds of courses from specialist organizations
+                </p>
+              </div>
+            </div>
+            {/* Tabs START */}
+            <ul
+              className="nav nav-pills nav-pills-bg-soft justify-content-sm-center mb-4 px-3"
+              id="course-pills-tab"
+              role="tablist"
+            >
+              {/* Tab item */}
+              <li className="nav-item me-2 me-sm-5">
+                <button
+                  className="nav-link mb-2 mb-md-0 active"
+                  id="course-pills-tab-1"
+                  data-bs-toggle="pill"
+                  data-bs-target="#course-pills-tabs-1"
+                  type="button"
+                  role="tab"
+                  aria-controls="course-pills-tabs-1"
+                  aria-selected="false"
+                >
+                  Web Design
+                </button>
+              </li>
+              {/* Tab item */}
+              <li className="nav-item me-2 me-sm-5">
+                <button
+                  className="nav-link mb-2 mb-md-0"
+                  id="course-pills-tab-2"
+                  data-bs-toggle="pill"
+                  data-bs-target="#course-pills-tabs-2"
+                  type="button"
+                  role="tab"
+                  aria-controls="course-pills-tabs-2"
+                  aria-selected="false"
+                >
+                  Development
+                </button>
+              </li>
+              {/* Tab item */}
+              <li className="nav-item me-2 me-sm-5">
+                <button
+                  className="nav-link mb-2 mb-md-0"
+                  id="course-pills-tab-3"
+                  data-bs-toggle="pill"
+                  data-bs-target="#course-pills-tabs-3"
+                  type="button"
+                  role="tab"
+                  aria-controls="course-pills-tabs-3"
+                  aria-selected="false"
+                >
+                  Graphic Design
+                </button>
+              </li>
+              {/* Tab item */}
+              <li className="nav-item me-2 me-sm-5">
+                <button
+                  className="nav-link mb-2 mb-md-0"
+                  id="course-pills-tab-4"
+                  data-bs-toggle="pill"
+                  data-bs-target="#course-pills-tabs-4"
+                  type="button"
+                  role="tab"
+                  aria-controls="course-pills-tabs-4"
+                  aria-selected="false"
+                >
+                  Marketing
+                </button>
+              </li>
+              {/* Tab item */}
+              <li className="nav-item me-2 me-sm-5">
+                <button
+                  className="nav-link mb-2 mb-md-0"
+                  id="course-pills-tab-5"
+                  data-bs-toggle="pill"
+                  data-bs-target="#course-pills-tabs-5"
+                  type="button"
+                  role="tab"
+                  aria-controls="course-pills-tabs-5"
+                  aria-selected="false"
+                >
+                  Finance
+                </button>
+              </li>
+            </ul>
+            {/* Tabs END */}
+            {/* Tabs content START */}
+            <div className="tab-content" id="course-pills-tabContent">
+              {/* Content START */}
+              <div
+                className="tab-pane fade show active"
+                id="course-pills-tabs-1"
+                role="tabpanel"
+                aria-labelledby="course-pills-tab-1"
+              >
+                <div className="row g-4">
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/08.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      {/* Card body */}
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-purple bg-opacity-10 text-purple"
+                          >
+                            All level
+                          </a>
+                          <a href="#" className="h6 mb-0">
+                            <i className="far fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">Sketch from A to Z: for app designer</a>
+                        </h5>
+                        <p className="mb-2 text-truncate-2">
+                          Proposal indulged no do sociable he throwing settling.
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="far fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            4.0/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            12h 56m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            15 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/02.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-success bg-opacity-10 text-success"
+                          >
+                            Beginner
+                          </a>
+                          <a href="#" className="text-danger">
+                            <i className="fas fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">Graphic Design Masterclass</a>
+                        </h5>
+                        <p className="mb-2 text-truncate-2">
+                          Rooms oh fully taken by worse do Points afraid but may
+                          end Rooms Points afraid but may end Rooms
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star-half-alt text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            4.5/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between ">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            9h 56m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            65 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/03.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-success bg-opacity-10 text-success"
+                          >
+                            Beginner
+                          </a>
+                          <a href="#" className="h6 fw-light mb-0">
+                            <i className="far fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">Create a Design System in Figma</a>
+                        </h5>
+                        <p className="mb-2 text-truncate-2">
+                          Rooms oh fully taken by worse do. Points afraid but
+                          may end afraid but may end.
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star-half-alt text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            4.5/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            5h 56m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            32 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/07.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-success bg-opacity-10 text-success"
+                          >
+                            Beginner
+                          </a>
+                          <a href="#" className="text-danger">
+                            <i className="fas fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">Deep Learning with React-Native </a>
+                        </h5>
+                        <p className="mb-2 text-truncate-2">
+                          Far advanced settling say finished raillery. Offered
+                          chiefly farther
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="far fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            4.0/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            18h 56m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            99 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/11.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-purple bg-opacity-10 text-purple"
+                          >
+                            All level
+                          </a>
+                          <a href="#" className="text-danger">
+                            <i className="fas fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">Build Responsive Websites with HTML</a>
+                        </h5>
+                        <p className="mb-2 text-truncate-2">
+                          Far advanced settling say finished raillery. Offered
+                          chiefly farther
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="far fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            4.0/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            15h 30m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            68 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/12.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-success bg-opacity-10 text-success"
+                          >
+                            Beginner
+                          </a>
+                          <a href="#" className="h6 fw-light mb-0">
+                            <i className="far fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">Build Websites with CSS</a>
+                        </h5>
+                        <p className="text-truncate-2 mb-2">
+                          Far advanced settling say finished raillery. Offered
+                          chiefly farther
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star-half-alt text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            4.5/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between mt-2">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            36h 30m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            72 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/04.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-purple bg-opacity-10 text-purple"
+                          >
+                            All level
+                          </a>
+                          <a href="#" className="text-danger">
+                            <i className="fas fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">Learn Invision</a>
+                        </h5>
+                        <p className="mb-2">
+                          Arrived off she elderly beloved him Course regard to
+                          up he hardly.
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star-half-alt text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="far fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            3.5/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between mt-2">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            6h 56m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            82 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/09.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-purple bg-opacity-10 text-purple"
+                          >
+                            All level
+                          </a>
+                          <a href="#" className="h6 fw-light mb-0">
+                            <i className="far fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">JavaScript: Full Understanding</a>
+                        </h5>
+                        <p className="text-truncate-2 mb-2">
+                          Far advanced settling say finished raillery. Offered
+                          chiefly farther.
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            5.0/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            35h 20m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            89 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                </div>{" "}
+                {/* Row END */}
+              </div>
+              {/* Content END */}
+              {/* Content START */}
+              <div
+                className="tab-pane fade"
+                id="course-pills-tabs-2"
+                role="tabpanel"
+                aria-labelledby="course-pills-tab-2"
+              >
+                <div className="row g-4">
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/05.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-success bg-opacity-10 text-success"
+                          >
+                            Beginner
+                          </a>
+                          <a href="#" className="h6 fw-light mb-0">
+                            <i className="far fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">The Complete Web Development in python</a>
+                        </h5>
+                        <p className="text-truncate-2 mb-2">
+                          Mention Mr manners opinion if garrets enabled.
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star-half-alt text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            4.5/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between mt-2">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            10h 00m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            26 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/06.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-info bg-opacity-10 text-info"
+                          >
+                            Intermediate
+                          </a>
+                          <a href="#" className="h6 fw-light mb-0">
+                            <i className="far fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">Angular – The Complete Guider</a>
+                        </h5>
+                        <p className="text-truncate-2 mb-2">
+                          Rooms oh fully taken by worse do. Points afraid but
+                          may end.
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star-half-alt text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            4.5/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between mt-2">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            9h 32m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            42 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/07.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-success bg-opacity-10 text-success"
+                          >
+                            Beginner
+                          </a>
+                          <a href="#" className="text-danger">
+                            <i className="fas fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">Deep Learning with React-Native</a>
+                        </h5>
+                        <p className="text-truncate-2 mb-2">
+                          Far advanced settling say finished raillery. Offered
+                          chiefly farther
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="far fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            4.0/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            18h 56m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            99 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/09.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-purple bg-opacity-10 text-purple"
+                          >
+                            All level
+                          </a>
+                          <a href="#" className="h6 fw-light mb-0">
+                            <i className="far fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">JavaScript: Full Understanding</a>
+                        </h5>
+                        <p className="text-truncate-2 mb-2">
+                          Far advanced settling say finished raillery. Offered
+                          chiefly farther
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            5.0/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            35h 20m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            89 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/10.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-info bg-opacity-10 text-info"
+                          >
+                            Intermediate
+                          </a>
+                          <a href="#" className="text-danger">
+                            <i className="fas fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">Bootstrap 5 From Scratch</a>
+                        </h5>
+                        <p className="text-truncate-2 mb-2">
+                          Far advanced settling say finished raillery. Offered
+                          chiefly farther
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star-half-alt text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            4.5/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between mt-2">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            25h 56m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            38 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/13.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-success bg-opacity-10 text-success"
+                          >
+                            Beginner
+                          </a>
+                          <a href="#" className="h6 fw-light mb-0">
+                            <i className="far fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">PHP with - CMS Project</a>
+                        </h5>
+                        <p className="text-truncate-2 mb-2">
+                          Far advanced settling say finished raillery. Offered
+                          chiefly farther
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="far fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            4.0/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            21h 22m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            30 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                </div>
+              </div>
+              {/* Content END */}
+              {/* Content START */}
+              <div
+                className="tab-pane fade"
+                id="course-pills-tabs-3"
+                role="tabpanel"
+                aria-labelledby="course-pills-tab-3"
+              >
+                <div className="row g-4">
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/08.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-purple bg-opacity-10 text-purple"
+                          >
+                            All level
+                          </a>
+                          <a href="#" className="h6 fw-light mb-0">
+                            <i className="far fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">Sketch from A to Z: for app designer</a>
+                        </h5>
+                        <p className="text-truncate-2 mb-2">
+                          Proposal indulged no do sociable he throwing settling
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="far fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            4.0/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            12h 56m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            15 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/04.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-purple bg-opacity-10 text-purple"
+                          >
+                            All level
+                          </a>
+                          <a href="#" className="text-danger">
+                            <i className="fas fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">Learn Invision</a>
+                        </h5>
+                        <p className="mb-2">
+                          Arrived off she elderly beloved him Course regard to
+                          up he hardly.
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star-half-alt text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="far fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            3.5/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between mt-2">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            6h 56m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            82 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/02.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-success bg-opacity-10 text-success"
+                          >
+                            Beginner
+                          </a>
+                          <a href="#" className="text-danger">
+                            <i className="fas fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">Graphic Design Masterclass</a>
+                        </h5>
+                        <p className="text-truncate-2 mb-2">
+                          Rooms oh fully taken by worse do. Points afraid but
+                          may end.
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star-half-alt text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            4.5/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            9h 56m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            65 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/03.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-success bg-opacity-10 text-success"
+                          >
+                            Beginner
+                          </a>
+                          <a href="#" className="h6 fw-light mb-0">
+                            <i className="far fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">Create a Design System in Figma</a>
+                        </h5>
+                        <p className="text-truncate-2 mb-2">
+                          Rooms oh fully taken by worse do. Points afraid but
+                          may end.
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star-half-alt text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            4.5/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            5h 56m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            32 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                </div>
+              </div>
+              {/* Content END */}
+              {/* Content START */}
+              <div
+                className="tab-pane fade"
+                id="course-pills-tabs-4"
+                role="tabpanel"
+                aria-labelledby="course-pills-tab-4"
+              >
+                <div className="row g-4">
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/01.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-success bg-opacity-10 text-success"
+                          >
+                            Beginner
+                          </a>
+                          <a href="#" className="text-danger">
+                            <i className="fas fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">Digital Marketing Masterclass</a>
+                        </h5>
+                        <p className="text-truncate-2 mb-2">
+                          Delivered dejection necessary objection do Mr
+                          prevailed.
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star-half-alt text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            4.5/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            6h 56m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            82 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/08.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-purple bg-opacity-10 text-purple"
+                          >
+                            All level
+                          </a>
+                          <a href="#" className="h6 fw-light mb-0">
+                            <i className="far fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">Sketch from A to Z: for app designer</a>
+                        </h5>
+                        <p className="text-truncate-2 mb-2">
+                          Proposal indulged no do sociable he throwing settling.
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="far fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            4.0/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            12h 56m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            15 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                </div>
+              </div>
+              {/* Content END */}
+              {/* Content START */}
+              <div
+                className="tab-pane fade"
+                id="course-pills-tabs-5"
+                role="tabpanel"
+                aria-labelledby="course-pills-tab-5"
+              >
+                <div className="row g-4">
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/04.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-purple bg-opacity-10 text-purple"
+                          >
+                            All level
+                          </a>
+                          <a href="#" className="text-danger">
+                            <i className="fas fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">Learn Invision</a>
+                        </h5>
+                        <p className="text-truncate-2 mb-2">
+                          Arrived off she elderly beloved him Course regard to
+                          up he hardly.
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star-half-alt text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="far fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            3.5/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            6h 56m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            82 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="card shadow h-100">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/09.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <a
+                            href="#"
+                            className="badge bg-purple bg-opacity-10 text-purple"
+                          >
+                            All level
+                          </a>
+                          <a href="#" className="h6 fw-light mb-0">
+                            <i className="far fa-heart" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title fw-normal">
+                          <a href="#">JavaScript: Full Understanding</a>
+                        </h5>
+                        <p className="text-truncate-2 mb-2">
+                          Far advanced settling say finished raillery. Offered
+                          chiefly farther.
+                        </p>
+                        {/* Rating star */}
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item me-0 small">
+                            <i className="fas fa-star text-warning" />
+                          </li>
+                          <li className="list-inline-item ms-2 h6 fw-light mb-0">
+                            5.0/5.0
+                          </li>
+                        </ul>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0 pb-3">
+                        <hr />
+                        <div className="d-flex justify-content-between">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            35h 20m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            89 lectures
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                </div>
+              </div>
+              {/* Content END */}
+            </div>
+            {/* Tabs content END */}
+          </div>
+        </section>
+        {/* =======================
+Popular course END */}
+        {/* =======================
+Action box START */}
+        <section className="pt-0 pt-lg-5">
+          <div className="container position-relative">
+            {/* SVG decoration START */}
+            <figure className="position-absolute top-50 start-50 translate-middle ms-2">
+              <svg>
+                <path
+                  className="fill-white opacity-4"
+                  d="m496 22.999c0 10.493-8.506 18.999-18.999 18.999s-19-8.506-19-18.999 8.507-18.999 19-18.999 18.999 8.506 18.999 18.999z"
+                />
+                <path
+                  className="fill-white opacity-4"
+                  d="m775 102.5c0 5.799-4.701 10.5-10.5 10.5-5.798 0-10.499-4.701-10.499-10.5 0-5.798 4.701-10.499 10.499-10.499 5.799 0 10.5 4.701 10.5 10.499z"
+                />
+                <path
+                  className="fill-white opacity-4"
+                  d="m192 102c0 6.626-5.373 11.999-12 11.999s-11.999-5.373-11.999-11.999c0-6.628 5.372-12 11.999-12s12 5.372 12 12z"
+                />
+                <path
+                  className="fill-white opacity-4"
+                  d="m20.499 10.25c0 5.66-4.589 10.249-10.25 10.249-5.66 0-10.249-4.589-10.249-10.249-0-5.661 4.589-10.25 10.249-10.25 5.661-0 10.25 4.589 10.25 10.25z"
+                />
+              </svg>
+            </figure>
+            {/* SVG decoration END */}
+            <div className="row">
+              <div className="col-12">
+                <div className="bg-info p-4 p-sm-5 rounded-3">
+                  <div className="row position-relative">
+                    {/* Svg decoration */}
+                    <figure className="fill-white opacity-1 position-absolute top-50 start-0 translate-middle-y">
+                      <svg width="141px" height="141px">
+                        <path d="M140.520,70.258 C140.520,109.064 109.062,140.519 70.258,140.519 C31.454,140.519 -0.004,109.064 -0.004,70.258 C-0.004,31.455 31.454,-0.003 70.258,-0.003 C109.062,-0.003 140.520,31.455 140.520,70.258 Z" />
+                      </svg>
+                    </figure>
+                    {/* Action box */}
+                    <div className="col-11 mx-auto position-relative">
+                      <div className="row align-items-center">
+                        {/* Title */}
+                        <div className="col-lg-7">
+                          <h3 className="text-white">Become an Instructor!</h3>
+                          <p className="text-white mb-3 mb-lg-0">
+                            Speedily say has suitable disposal add boy. On forth
+                            doubt miles of child. Exercise joy man children
+                            rejoiced. Yet uncommonly his ten who diminution
+                            astonished.
+                          </p>
+                        </div>
+                        {/* Content and input */}
+                        <div className="col-lg-5 text-lg-end">
+                          <a href="#" className="btn btn-outline-warning mb-0">
+                            Start Teaching Today
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>{" "}
+                  {/* Row END */}
+                </div>
+              </div>
+            </div>{" "}
+            {/* Row END */}
+          </div>
+        </section>
+        {/* =======================
+Action box END */}
+        {/* =======================
+Trending courses START */}
+        <section className="pb-5 pt-0 pt-lg-5">
+          <div className="container">
+            {/* Title */}
+            <div className="row mb-4">
+              <div className="col-lg-8 mx-auto text-center">
+                <h2 className="fs-1">Our Trending Courses</h2>
+                <p className="mb-0">Check out most 🔥 courses in the market</p>
+              </div>
+            </div>
+            <div className="row">
+              {/* Slider START */}
+              <div className="tiny-slider arrow-round arrow-blur arrow-hover">
+                <div
+                  className="tiny-slider-inner pb-1"
+                  data-autoplay="true"
+                  data-arrow="true"
+                  data-edge={2}
+                  data-dots="false"
+                  data-items={3}
+                  data-items-lg={2}
+                  data-items-sm={1}
+                >
+                  {/* Card item START */}
+                  <div>
+                    <div className="card action-trigger-hover border">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/14.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      {/* Ribbon */}
+                      <div className="ribbon mt-3">
+                        <span>Free</span>
+                      </div>
+                      {/* Card body */}
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-3">
+                          <span className="hstack gap-2">
+                            <a
+                              href="#"
+                              className="badge bg-primary bg-opacity-10 text-primary"
+                            >
+                              Design
+                            </a>
+                            <a href="#" className="badge bg-dark text-white">
+                              Beginner
+                            </a>
+                          </span>
+                          <a href="#" className="h6 fw-light mb-0">
+                            <i className="far fa-bookmark" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title">
+                          <a href="#">
+                            The complete Digital Marketing Course - 8 Course in
+                            1
+                          </a>
+                        </h5>
+                        {/* Rating */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <div className="hstack gap-2">
+                            <p className="text-warning m-0">
+                              4.5
+                              <i className="fas fa-star text-warning ms-1" />
+                            </p>
+                            <span className="small">(6500)</span>
+                          </div>
+                          <div className="hstack gap-2">
+                            <p className="h6 fw-light mb-0 m-0">6500</p>
+                            <span className="small">(Student)</span>
+                          </div>
+                        </div>
+                        {/* Time */}
+                        <div className="hstack gap-3">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            6h 56m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            82 lectures
+                          </span>
+                        </div>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0">
+                        <hr />
+                        {/* Avatar and Price */}
+                        <div className="d-flex justify-content-between align-items-center">
+                          {/* Avatar */}
+                          <div className="d-flex align-items-center">
+                            <div className="avatar avatar-sm">
+                              <img
+                                className="avatar-img rounded-1"
+                                src="@/assets/images/avatar/10.jpg"
+                                alt="avatar"
+                              />
+                            </div>
+                            <p className="mb-0 ms-2">
+                              <a href="#" className="h6 fw-light mb-0">
+                                Larry Lawson
+                              </a>
+                            </p>
+                          </div>
+                          {/* Price */}
+                          <div>
+                            <h4 className="text-success mb-0 item-show">
+                              Free
+                            </h4>
+                            <a
+                              href="#"
+                              className="btn-sm btn-success-soft item-show-hover"
+                            >
+                              <i className="fas fa-shopping-cart me-2" />
+                              Add to cart
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div>
+                    <div className="card action-trigger-hover border">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/15.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      {/* Card body */}
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-3">
+                          <span className="hstack gap-2">
+                            <a
+                              href="#"
+                              className="badge bg-primary bg-opacity-10 text-primary"
+                            >
+                              Development
+                            </a>
+                            <a href="#" className="badge bg-dark text-white">
+                              All level
+                            </a>
+                          </span>
+                          <a href="#" className="h6 fw-light mb-0">
+                            <i className="far fa-bookmark" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title">
+                          <a href="#">
+                            Angular – The Complete Guide (2021 Edition)
+                          </a>
+                        </h5>
+                        {/* Rating */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <div className="hstack gap-2">
+                            <p className="text-warning m-0">
+                              4.0
+                              <i className="fas fa-star text-warning ms-1" />
+                            </p>
+                            <span className="small">(3500)</span>
+                          </div>
+                          <div className="hstack gap-2">
+                            <p className="h6 fw-light mb-0 m-0">4500</p>
+                            <span className="small">(Student)</span>
+                          </div>
+                        </div>
+                        {/* Time */}
+                        <div className="hstack gap-3">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            12h 45m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            65 lectures
+                          </span>
+                        </div>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0">
+                        <hr />
+                        {/* Avatar and Price */}
+                        <div className="d-flex justify-content-between align-items-center">
+                          {/* Avatar */}
+                          <div className="d-flex align-items-center">
+                            <div className="avatar avatar-sm">
+                              <img
+                                className="avatar-img rounded-1"
+                                src="@/assets/images/avatar/04.jpg"
+                                alt="avatar"
+                              />
+                            </div>
+                            <p className="mb-0 ms-2">
+                              <a href="#" className="h6 fw-light mb-0">
+                                Billy Vasquez
+                              </a>
+                            </p>
+                          </div>
+                          {/* Price */}
+                          <div>
+                            <h4 className="text-success mb-0 item-show">
+                              $255
+                            </h4>
+                            <a
+                              href="#"
+                              className="btn-sm btn-success-soft item-show-hover"
+                            >
+                              <i className="fas fa-shopping-cart me-2" />
+                              Add to cart
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div>
+                    <div className="card action-trigger-hover border">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/17.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      {/* Card body */}
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-3">
+                          <span className="hstack gap-2">
+                            <a
+                              href="#"
+                              className="badge bg-primary bg-opacity-10 text-primary"
+                            >
+                              Design
+                            </a>
+                            <a href="#" className="badge bg-dark text-white">
+                              Beginner
+                            </a>
+                          </span>
+                          <a href="#" className="h6 fw-light mb-0">
+                            <i className="far fa-bookmark" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title">
+                          <a href="#">
+                            Time Management Mastery: Do More, Stress Less
+                          </a>
+                        </h5>
+                        {/* Rating */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <div className="hstack gap-2">
+                            <p className="text-warning m-0">
+                              4.5
+                              <i className="fas fa-star text-warning ms-1" />
+                            </p>
+                            <span className="small">(2000)</span>
+                          </div>
+                          <div className="hstack gap-2">
+                            <p className="h6 fw-light mb-0 m-0">8000</p>
+                            <span className="small">(Student)</span>
+                          </div>
+                        </div>
+                        {/* Time */}
+                        <div className="hstack gap-3">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            24h 56m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            55 lectures
+                          </span>
+                        </div>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0">
+                        <hr />
+                        {/* Avatar and Price */}
+                        <div className="d-flex justify-content-between align-items-center">
+                          {/* Avatar */}
+                          <div className="d-flex align-items-center">
+                            <div className="avatar avatar-sm">
+                              <img
+                                className="avatar-img rounded-1"
+                                src="@/assets/images/avatar/09.jpg"
+                                alt="avatar"
+                              />
+                            </div>
+                            <p className="mb-0 ms-2">
+                              <a href="#" className="h6 fw-light mb-0">
+                                Lori Stevens
+                              </a>
+                            </p>
+                          </div>
+                          {/* Price */}
+                          <div>
+                            <h4 className="text-success mb-0 item-show">
+                              $500
+                            </h4>
+                            <a
+                              href="#"
+                              className="btn-sm btn-success-soft item-show-hover"
+                            >
+                              <i className="fas fa-shopping-cart me-2" />
+                              Add to cart
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                  {/* Card item START */}
+                  <div>
+                    <div className="card action-trigger-hover border">
+                      {/* Image */}
+                      <img
+                        src="@/assets/images/courses/4by3/16.jpg"
+                        className="card-img-top"
+                        alt="course image"
+                      />
+                      {/* Card body */}
+                      <div className="card-body pb-0">
+                        {/* Badge and favorite */}
+                        <div className="d-flex justify-content-between mb-3">
+                          <span className="hstack gap-2">
+                            <a
+                              href="#"
+                              className="badge bg-primary bg-opacity-10 text-primary"
+                            >
+                              Design
+                            </a>
+                            <a href="#" className="badge bg-dark text-white">
+                              Beginner
+                            </a>
+                          </span>
+                          <a href="#" className="h6 fw-light mb-0">
+                            <i className="far fa-bookmark" />
+                          </a>
+                        </div>
+                        {/* Title */}
+                        <h5 className="card-title">
+                          <a href="#">
+                            Time Management Mastery: Do More, Stress Less
+                          </a>
+                        </h5>
+                        {/* Rating */}
+                        <div className="d-flex justify-content-between mb-2">
+                          <div className="hstack gap-2">
+                            <p className="text-warning m-0">
+                              4.0
+                              <i className="fas fa-star text-warning ms-1" />
+                            </p>
+                            <span className="small">(2000)</span>
+                          </div>
+                          <div className="hstack gap-2">
+                            <p className="h6 fw-light mb-0 m-0">1200</p>
+                            <span className="small">(Student)</span>
+                          </div>
+                        </div>
+                        {/* Time */}
+                        <div className="hstack gap-3">
+                          <span className="h6 fw-light mb-0">
+                            <i className="far fa-clock text-danger me-2" />
+                            09h 56m
+                          </span>
+                          <span className="h6 fw-light mb-0">
+                            <i className="fas fa-table text-orange me-2" />
+                            21 lectures
+                          </span>
+                        </div>
+                      </div>
+                      {/* Card footer */}
+                      <div className="card-footer pt-0">
+                        <hr />
+                        {/* Avatar and Price */}
+                        <div className="d-flex justify-content-between align-items-center">
+                          {/* Avatar */}
+                          <div className="d-flex align-items-center">
+                            <div className="avatar avatar-sm">
+                              <img
+                                className="avatar-img rounded-1"
+                                src="@/assets/images/avatar/01.jpg"
+                                alt="avatar"
+                              />
+                            </div>
+                            <p className="mb-0 ms-2">
+                              <a href="#" className="h6 fw-light mb-0">
+                                Frances Guerrero
+                              </a>
+                            </p>
+                          </div>
+                          {/* Price */}
+                          <div>
+                            <h4 className="text-success mb-0 item-show">
+                              $200
+                            </h4>
+                            <a
+                              href="#"
+                              className="btn-sm btn-success-soft item-show-hover"
+                            >
+                              <i className="fas fa-shopping-cart me-2" />
+                              Add to cart
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Card item END */}
+                </div>
+              </div>
+              {/* Slider END */}
+            </div>
+          </div>
+        </section>
+        {/* =======================
+Trending courses END */}
+        {/* =======================
+Reviews START */}
+        <section className="bg-light">
+          <div className="container">
+            <div className="row g-4 g-lg-5 align-items-center">
+              <div className="col-xl-7 order-2 order-xl-1">
+                <div className="row mt-0 mt-xl-5">
+                  {/* Review */}
+                  <div className="col-md-7 position-relative mb-0 mt-0 mt-md-5">
+                    {/* SVG */}
+                    <figure className="fill-danger opacity-2 position-absolute top-0 start-0 translate-middle mb-3">
+                      <svg width="211px" height="211px">
+                        <path d="M210.030,105.011 C210.030,163.014 163.010,210.029 105.012,210.029 C47.013,210.029 -0.005,163.014 -0.005,105.011 C-0.005,47.015 47.013,-0.004 105.012,-0.004 C163.010,-0.004 210.030,47.015 210.030,105.011 Z" />
+                      </svg>
+                    </figure>
+                    <div className="bg-body shadow text-center p-4 rounded-3 position-relative mb-5 mb-md-0">
+                      {/* Avatar */}
+                      <div className="avatar avatar-xl mb-3">
+                        <img
+                          className="avatar-img rounded-circle"
+                          src="@/assets/images/avatar/01.jpg"
+                          alt="avatar"
+                        />
+                      </div>
+                      {/* Content */}
+                      <blockquote>
+                        <p>
+                          <span className="me-1 small">
+                            <i className="fas fa-quote-left" />
+                          </span>
+                          Moonlight newspaper up its enjoyment agreeable
+                          depending. Timed voice share led him to widen noisy
+                          young. At weddings believed laughing
+                          <span className="ms-1 small">
+                            <i className="fas fa-quote-right" />
+                          </span>
+                        </p>
+                      </blockquote>
+                      {/* Rating */}
+                      <ul className="list-inline mb-2">
+                        <li className="list-inline-item me-0 small">
+                          <i className="fas fa-star text-warning" />
+                        </li>
+                        <li className="list-inline-item me-0 small">
+                          <i className="fas fa-star text-warning" />
+                        </li>
+                        <li className="list-inline-item me-0 small">
+                          <i className="fas fa-star text-warning" />
+                        </li>
+                        <li className="list-inline-item me-0 small">
+                          <i className="fas fa-star text-warning" />
+                        </li>
+                        <li className="list-inline-item me-0 small">
+                          <i className="fas fa-star-half-alt text-warning" />
+                        </li>
+                      </ul>
+                      {/* Info */}
+                      <h6 className="mb-0">Carolyn Ortiz</h6>
+                    </div>
+                  </div>
+                  {/* Mentor list */}
+                  <div className="col-md-5 mt-5 mt-md-0 d-none d-md-block">
+                    <div className="bg-body shadow p-4 rounded-3 d-inline-block position-relative">
+                      {/* Icon */}
+                      <div className="icon-lg bg-warning rounded-circle position-absolute top-0 start-100 translate-middle">
+                        <i className="bi bi-shield-fill-check text-dark" />
+                      </div>
+                      {/* Title */}
+                      <h6 className="mb-3">100+ Verified Mentors</h6>
+                      {/* Mentor Item */}
+                      <div className="d-flex align-items-center mb-3">
+                        {/* Avatar */}
+                        <div className="avatar avatar-sm">
+                          <img
+                            className="avatar-img rounded-1"
+                            src="@/assets/images/avatar/09.jpg"
+                            alt="avatar"
+                          />
+                        </div>
+                        {/* Info */}
+                        <div className="ms-2">
+                          <h6 className="mb-0">Lori Stevens</h6>
+                          <p className="mb-0 small">Tutor of physic</p>
+                        </div>
+                      </div>
+                      {/* Mentor Item */}
+                      <div className="d-flex align-items-center mb-3">
+                        {/* Avatar */}
+                        <div className="avatar avatar-sm">
+                          <img
+                            className="avatar-img rounded-1"
+                            src="@/assets/images/avatar/04.jpg"
+                            alt="avatar"
+                          />
+                        </div>
+                        {/* Info */}
+                        <div className="ms-2">
+                          <h6 className="mb-0">Billy Vasquez</h6>
+                          <p className="mb-0 small">Tutor of chemistry</p>
+                        </div>
+                      </div>
+                      {/* Mentor Item */}
+                      <div className="d-flex align-items-center">
+                        {/* Avatar */}
+                        <div className="avatar avatar-sm">
+                          <img
+                            className="avatar-img rounded-1"
+                            src="@/assets/images/avatar/02.jpg"
+                            alt="avatar"
+                          />
+                        </div>
+                        {/* Info */}
+                        <div className="ms-2">
+                          <h6 className="mb-0">Larry Lawson</h6>
+                          <p className="mb-0 small">Tutor of technology</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>{" "}
+                {/* Row END */}
+                <div className="row mt-5 mt-xl-0">
+                  {/* Rating */}
+                  <div className="col-7 mt-0 mt-xl-5 text-end position-relative z-index-1 d-none d-md-block">
+                    {/* SVG */}
+                    <figure className="fill-danger position-absolute top-0 start-50 mt-n7 ms-6 ps-3 pt-2 z-index-n1 d-none d-lg-block">
+                      <svg
+                        enableBackground="new 0 0 160.7 159.8"
+                        height="180px"
+                      >
+                        <path d="m153.2 114.5c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2-0.1-1.2 0.9-2.2 2.1-2.2z" />
+                        <path d="m116.4 114.5c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s0.9-2.2 2.1-2.2z" />
+                        <path d="m134.8 114.5c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s0.9-2.2 2.1-2.2z" />
+                        <path d="m135.1 96.9c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s0.9-2.2 2.1-2.2z" />
+                        <path d="m153.5 96.9c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2-0.1-1.2 0.9-2.2 2.1-2.2z" />
+                        <path d="m98.3 96.9c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s0.9-2.2 2.1-2.2z" />
+                        <ellipse cx="116.7" cy="99.1" rx="2.1" ry="2.2" />
+                        <path d="m153.2 149.8c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2-0.1-1.3 0.9-2.2 2.1-2.2z" />
+                        <path d="m135.1 132.2c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2 0-1.3 0.9-2.2 2.1-2.2z" />
+                        <path d="m153.5 132.2c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2-0.1-1.3 0.9-2.2 2.1-2.2z" />
+                        <path d="m80.2 79.3c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s1-2.2 2.1-2.2z" />
+                        <path d="m117 79.3c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s0.9-2.2 2.1-2.2z" />
+                        <path d="m98.6 79.3c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s0.9-2.2 2.1-2.2z" />
+                        <path d="m135.4 79.3c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s0.9-2.2 2.1-2.2z" />
+                        <path d="m153.8 79.3c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s0.9-2.2 2.1-2.2z" />
+                        <path d="m80.6 61.7c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2-0.1-1.2 0.9-2.2 2.1-2.2z" />
+                        <ellipse cx="98.9" cy="63.9" rx="2.1" ry="2.2" />
+                        <path d="m117.3 61.7c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s0.9-2.2 2.1-2.2z" />
+                        <ellipse cx="62.2" cy="63.9" rx="2.1" ry="2.2" />
+                        <ellipse cx="154.1" cy="63.9" rx="2.1" ry="2.2" />
+                        <path d="m135.7 61.7c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s0.9-2.2 2.1-2.2z" />
+                        <path d="m154.4 44.1c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s0.9-2.2 2.1-2.2z" />
+                        <path d="m80.9 44.1c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2-0.1-1.2 0.9-2.2 2.1-2.2z" />
+                        <path d="m44.1 44.1c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2-0.1-1.2 0.9-2.2 2.1-2.2z" />
+                        <path d="m99.2 44.1c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s1-2.2 2.1-2.2z" />
+                        <ellipse cx="117.6" cy="46.3" rx="2.1" ry="2.2" />
+                        <path d="m136 44.1c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s0.9-2.2 2.1-2.2z" />
+                        <path d="m62.5 44.1c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2-0.1-1.2 0.9-2.2 2.1-2.2z" />
+                        <path d="m154.7 26.5c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s0.9-2.2 2.1-2.2z" />
+                        <path d="m62.8 26.5c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2-0.1-1.2 0.9-2.2 2.1-2.2z" />
+                        <ellipse cx="136.3" cy="28.6" rx="2.1" ry="2.2" />
+                        <path d="m99.6 26.5c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2-0.1-1.2 0.9-2.2 2.1-2.2z" />
+                        <path d="m117.9 26.5c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s1-2.2 2.1-2.2z" />
+                        <path d="m81.2 26.5c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2-0.1-1.2 0.9-2.2 2.1-2.2z" />
+                        <path d="m26 26.5c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s0.9-2.2 2.1-2.2z" />
+                        <ellipse cx="44.4" cy="28.6" rx="2.1" ry="2.2" />
+                        <path d="m136.6 13.2c-1.2 0-2.1-1-2.1-2.2s1-2.2 2.1-2.2c1.2 0 2.1 1 2.1 2.2 0.1 1.2-0.9 2.2-2.1 2.2z" />
+                        <path d="m155 13.2c-1.2 0-2.1-1-2.1-2.2s1-2.2 2.1-2.2c1.2 0 2.1 1 2.1 2.2 0.1 1.2-0.9 2.2-2.1 2.2z" />
+                        <path d="m26.3 13.2c-1.2 0-2.1-1-2.1-2.2s1-2.2 2.1-2.2c1.2 0 2.1 1 2.1 2.2s-0.9 2.2-2.1 2.2z" />
+                        <path d="m81.5 13.2c-1.2 0-2.1-1-2.1-2.2s1-2.2 2.1-2.2c1.2 0 2.1 1 2.1 2.2s-0.9 2.2-2.1 2.2z" />
+                        <path d="m63.1 13.2c-1.2 0-2.1-1-2.1-2.2s1-2.2 2.1-2.2c1.2 0 2.1 1 2.1 2.2s-0.9 2.2-2.1 2.2z" />
+                        <path d="m44.7 13.2c-1.2 0-2.1-1-2.1-2.2s1-2.2 2.1-2.2c1.2 0 2.1 1 2.1 2.2s-0.9 2.2-2.1 2.2z" />
+                        <path d="m118.2 13.2c-1.2 0-2.1-1-2.1-2.2s1-2.2 2.1-2.2c1.2 0 2.1 1 2.1 2.2 0.1 1.2-0.9 2.2-2.1 2.2z" />
+                        <path d="m7.9 13.2c-1.2 0-2.1-1-2.1-2.2s1-2.2 2.1-2.2c1.2 0 2.1 1 2.1 2.2 0.1 1.2-0.9 2.2-2.1 2.2z" />
+                        <path d="m99.9 13.2c-1.2 0-2.1-1-2.1-2.2s1-2.2 2.1-2.2c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2z" />
+                      </svg>
+                    </figure>
+                    <div
+                      className="p-3 shadow bg-primary d-inline-block rounded-4 shadow-lg text-center"
+                      style={{
+                        background:
+                          "url(@/assets/images/pattern/02.png) no-repeat center center",
+                        backgroundSize: "cover",
+                      }}
+                    >
+                      {/* Info */}
+                      <h5 className="text-white mb-0">4.5/5.0</h5>
+                      {/* Rating */}
+                      <ul className="list-inline mb-2">
+                        <li className="list-inline-item me-0 small">
+                          <i className="fas fa-star text-warning" />
+                        </li>
+                        <li className="list-inline-item me-0 small">
+                          <i className="fas fa-star text-warning" />
+                        </li>
+                        <li className="list-inline-item me-0 small">
+                          <i className="fas fa-star text-warning" />
+                        </li>
+                        <li className="list-inline-item me-0 small">
+                          <i className="fas fa-star text-warning" />
+                        </li>
+                        <li className="list-inline-item me-0 small">
+                          <i className="fas fa-star-half-alt text-warning" />
+                        </li>
+                      </ul>
+                      <p className="text-white mb-0">Based on 3265 ratings</p>
+                    </div>
+                  </div>
+                  {/* Review */}
+                  <div className="col-md-5 mt-n6 mb-0 mb-md-5">
+                    <div className="bg-body shadow text-center p-4 rounded-3">
+                      {/* Avatar */}
+                      <div className="avatar avatar-xl mb-3">
+                        <img
+                          className="avatar-img rounded-circle"
+                          src="@/assets/images/avatar/03.jpg"
+                          alt="avatar"
+                        />
+                      </div>
+                      {/* Content */}
+                      <blockquote>
+                        <p>
+                          <span className="me-1 small">
+                            <i className="fas fa-quote-left" />
+                          </span>
+                          At weddings believed laughing although the Moonlight
+                          newspaper up its enjoyment agreeable depending.
+                          <span className="ms-1 small">
+                            <i className="fas fa-quote-right" />
+                          </span>
+                        </p>
+                      </blockquote>
+                      {/* Rating */}
+                      <ul className="list-inline mb-2">
+                        <li className="list-inline-item me-0 small">
+                          <i className="fas fa-star text-warning" />
+                        </li>
+                        <li className="list-inline-item me-0 small">
+                          <i className="fas fa-star text-warning" />
+                        </li>
+                        <li className="list-inline-item me-0 small">
+                          <i className="fas fa-star text-warning" />
+                        </li>
+                        <li className="list-inline-item me-0 small">
+                          <i className="fas fa-star text-warning" />
+                        </li>
+                        <li className="list-inline-item me-0 small">
+                          <i className="fas fa-star-half-alt text-warning" />
+                        </li>
+                      </ul>
+                      {/* Info */}
+                      <h6 className="mb-0">Dennis Barrett</h6>
+                    </div>
+                  </div>
+                </div>{" "}
+                {/* Row END */}
+              </div>
+              <div className="col-xl-5 order-1 text-center text-xl-start">
+                {/* Title */}
+                <h2 className="fs-1">
+                  Some valuable feedback from our students
+                </h2>
+                <p>
+                  Supposing so be resolving breakfast am or perfectly. It drew a
+                  hill from me. Valley by oh twenty direct me so. Departure
+                  defective arranging rapturous did believe him all had
+                  supported. Family months lasted simple set nature vulgar him.
+                  Picture for attempt joy excited ten carried manners talking
+                  how.
+                </p>
+                <a href="#" className="btn btn-primary mb-0">
+                  View Reviews
+                </a>
+              </div>
+            </div>{" "}
+          </div>
+        </section>
 
-    )
-}
+      </main>
 
-export default LandingPage
+      <Footer />
+    </>
+  );
+};
+
+export default LandingPage;
